@@ -1,26 +1,15 @@
+// src/App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'; // Import CSS for styling (optional)
+import LoginScreen from './components/screens/LoginScreen/LoginScreen'; // Adjust the path if needed
 
-function App() {
+// Define a functional component with TypeScript
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> {/* Added div wrapper for consistent styling */}
+      <LoginScreen />
     </div>
   );
-}
+};
 
 export default App;

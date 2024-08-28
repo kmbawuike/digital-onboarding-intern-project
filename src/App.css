@@ -6,7 +6,10 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.everything-is-ea-y{
+  background-color: rgb(132,20,142);
+  border-radius: 100px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

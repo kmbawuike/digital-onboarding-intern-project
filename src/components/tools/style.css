@@ -1,0 +1,24 @@
+.icons {
+    align-items: flex-start; 
+    background-color: #FFB81C; 
+    border-radius: 20px; 
+    display: inline-flex;
+    gap: 10px;
+    padding: 2px;
+    
+}
+
+.box{
+    height: 7px;
+    width: 28px;
+}
+
+.box .rectangle{
+    background-color:#ffffff99;
+    border-radius: 5px;
+    height: 7px;
+    /* left: 0;
+
+    top: 0; */
+    width: 28px;
+}

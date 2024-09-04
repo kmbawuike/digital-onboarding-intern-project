@@ -1,24 +1,38 @@
-.icons {
-    align-items: flex-start; 
-    background-color: #FFB81C; 
-    border-radius: 20px; 
+
+
+.button-frame {
+    align-items: center;
+    border-radius: 20px;
     display: inline-flex;
-    gap: 10px;
-    padding: 2px;
-    
-}
-
-.box{
-    height: 7px;
-    width: 28px;
-}
-
-.box .rectangle{
-    background-color:#ffffff99;
+    gap: 5px;
+    padding: 2px 3px;
+    position: relative;
+   }
+   .button-frame .icons {
+    flex: 0 0 auto;
+    position: relative;
+   }
+   .button-frame .rectangle {
+    background-color: #ffffff99;
     border-radius: 5px;
     height: 7px;
-    /* left: 0;
-
-    top: 0; */
+    position: relative;
     width: 28px;
+   }
+   
+
+
+
+
+
+box {
+ height: 92px;
+ width: 92px;
+}
+.box .ellipse {
+ height: 92px;
+ left: 0;
+ position: fixed;
+ top: 0;
+ width: 92px;
 }

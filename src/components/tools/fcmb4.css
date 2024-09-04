@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 200px;
+    gap: 250px;
     background-color: rgb(127, 18, 142);
 }
 
@@ -10,19 +10,29 @@ body {
     img {
         background-color: rgb(127, 18, 142);
         border-radius: 189px;
-        margin: 30px
+        margin-top: 70px;
+        margin-left: 120px;
+        height: 430px;
+        width: 400px;
     }
 
     h1 {
         color: white;
         margin-left: 50px;
+        /* width: 50px; */
+        margin-top: -120px;
+        margin-left: 220px;
+        display: flex;
+        font-size: 35px;
     }
 
     p {
         color: white;
         margin-left: 50px;
-        font-size: 60px;
+        font-size: 90px;
         margin-top: -50px;
+        margin-left: 200px;
+        font-weight: 450;
     }
 
 }

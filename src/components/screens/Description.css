@@ -1,0 +1,245 @@
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+      "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+      "Source Han Sans CN", sans-serif;
+  }
+  
+  .main-container {
+    overflow: hidden;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: relative;
+    width: 642px;
+    margin: 0 auto;
+    padding: 44px 65px 44px 65px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  .frame-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 26px;
+    position: relative;
+    width: 512px;
+    padding: 50px 50px 50px 50px;
+    background: #ffffff;
+    border-radius: 30px;
+  }
+  .frame-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 23px;
+    position: relative;
+    z-index: 1;
+  }
+  .select-description {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 244px;
+    height: 20px;
+    color: #4f4f4f;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.6px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+  }
+  .frame-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 9px;
+    position: relative;
+    z-index: 3;
+  }
+  .frame-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    background: #ffffff;
+    border: 1px solid rgba(151, 151, 151, 0.23);
+    z-index: 4;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(16, 47, 74, 0.06);
+  }
+  .frame-input {
+    flex-shrink: 0;
+    position: absolute;
+    width: 412px;
+    height: 64px;
+    top: -1px;
+    left: -1px;
+    background: transparent;
+    border: none;
+    z-index: 7;
+    outline: none;
+  }
+  .fcmb-account {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 17px;
+    color: #222822;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .radio-button {
+    flex-shrink: 0;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #334335;
+    z-index: 6;
+    overflow: hidden;
+    border-radius: 9999px;
+  }
+  .frame-5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid rgba(151, 151, 151, 0.23);
+    z-index: 8;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px 0 rgba(16, 47, 74, 0.06);
+  }
+  .dont-have-account {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 17px;
+    color: #222822;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+  }
+  .group {
+    flex-shrink: 0;
+    position: relative;
+    width: 23.756px;
+    height: 24px;
+    z-index: 10;
+  }
+  .checkmark {
+    position: relative;
+    width: 12.318px;
+    height: 9.778px;
+    margin: 7.111px 0 0 5.279px;
+    z-index: 12;
+  }
+  .xmlid {
+    position: absolute;
+    width: 12.318px;
+    height: 9.778px;
+    top: 0;
+    left: 0;
+    background: url(../../img/YellowCheck.svg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 13;
+  }
+  .oval-copy {
+    position: absolute;
+    width: 23.756px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    background: url(../../img/YellowCheck.svg)
+      no-repeat center;
+    background-size: cover;
+    z-index: 11;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 412px;
+    height: 70px;
+    padding: 15px 69px 15px 69px;
+    cursor: pointer;
+    background: linear-gradient(71.42deg, #60088c, #a11d8f);
+    border: none;
+    z-index: 14;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  .get-started {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 34px;
+    height: 17px;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 15;
+  }
+  

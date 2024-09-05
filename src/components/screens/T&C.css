@@ -95,7 +95,9 @@
     top: 0;
     left: 0;
     z-index: 4;
+    pointer-events: none; /* This will allow interactions with elements underneath */
   }
+  
   .rectangle-copy {
     position: absolute;
     width: 100%;

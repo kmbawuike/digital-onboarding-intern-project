@@ -15,7 +15,7 @@ const Terms: React.FC = () => {
               <div className='icons' />
             
             </div>
-            <input className='input-field'
+            <input className='input-field' 
             placeholder='Enter Referral Code' />
           </div>
         </div>

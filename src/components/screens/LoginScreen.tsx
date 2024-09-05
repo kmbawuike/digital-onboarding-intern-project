@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../assets/fxemoji_bolt.png";
-import "./OTP.css";
+
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
-import "./Default/Form.css";
+
 
 import "../screens/LoginScreen/style.css"
 const LoginScreen = (): JSX.Element => {
@@ -16,9 +16,9 @@ const LoginScreen = (): JSX.Element => {
           <section>
             <div className="overlap-group-2">
               <p className="everything-is-ea-y">
-                <span className="span">Ea</span>{" "}
+                <span className="span" style={{marginRight:"5px"}}>Ea</span>{" "}
                 <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} />
-                <span className="span">y loans with </span>
+                <span className="span " style={{marginLeft:"5px"}}>y loans with </span>
                 <span className="FCMB">FastCash</span>
               </p>
             </div>

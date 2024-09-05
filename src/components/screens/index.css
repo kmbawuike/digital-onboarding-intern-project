@@ -3,7 +3,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 200px;
-    background-color: rgb(127, 18, 142);
+    /* background-color: rgb(127, 18, 142); */
 }
 
 .section-1 {

@@ -10,7 +10,7 @@ import Loader from "../tools/Loader";
 import Modal from "../Modals/Modal"; // Import the Modal component
 import FaceID from "./Face-ID";
 import Man1 from "../../img/image 18.png";
-import "../screens/Default/Man-Frame.css";
+
 
 const OTP: React.FC = () => {
   const [dob, setDob] = useState("");

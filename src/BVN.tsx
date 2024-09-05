@@ -5,7 +5,7 @@ import FCMB from "./assets/download.png";
 import "./BVN.css";
 import Frame from "./components/tools/Frame";
 
-const FCMB2: React.FC = () => {
+const BVN: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<"BVN" | "NIN">("BVN");
 
   return (
@@ -76,4 +76,4 @@ const FCMB2: React.FC = () => {
   );
 };
 
-export default FCMB2;
+export default BVN;

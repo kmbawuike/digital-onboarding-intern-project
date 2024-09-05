@@ -7,7 +7,7 @@
   pointer-events: none;
 }
 .everything-is-ea-y{
-  background-color: rgb(132,20,142);
+  background-color: transparent;
   border-radius: 100px;
 }
 @media (prefers-reduced-motion: no-preference) {

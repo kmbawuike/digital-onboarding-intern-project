@@ -24,13 +24,14 @@ import OTP2 from './components/screens/OTP2';
 
 import Testing from './components/screens/test';
 import "./index.css"
+import BVN from './BVN';
 
 
 // Define a functional component with TypeScript
 const App: React.FC = () => {
   return (
     <div className="App"> {/* Added div wrapper for consistent styling */}
-<OTP2/>
+<LoginScreen/>
     </div>
   );
 };

@@ -91,13 +91,13 @@ body {
             }
         }
 
-        input {
+        /* input {
             width: 370px;
             margin-left: 30px;
             padding: 10px;
             border-radius: 6px;
             border-color: rgb(127, 18, 142);
-        }
+        } */
 
         .bvn-text {
             margin-left: 30px;

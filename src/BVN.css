@@ -13,13 +13,13 @@ body {
     top: 620px;
     width: 40px;
   }
-
-.section-1 {
-    img {
+  .img-lady {
        
-        border-radius: 189px;
-        margin: 30px;
-    }
+    border-radius: 189px;
+    margin: 30px;
+}
+.section-1 {
+   
 
 
     h1 {
@@ -117,7 +117,7 @@ body {
             }
         }
 
-        input {
+        .BVN_NIN {
             width: 370px;
             margin-left: 30px;
             padding: 10px;

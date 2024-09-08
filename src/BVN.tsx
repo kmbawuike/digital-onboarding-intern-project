@@ -4,9 +4,17 @@ import Bolt from "./assets/fxemoji_bolt.png";
 import FCMB from "./assets/download.png";
 import "./BVN.css";
 import Frame from "./components/tools/Frame";
+import { useNavigate } from "react-router-dom";
 
 const BVN: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<"BVN" | "NIN">("BVN");
+  const navigate = useNavigate();
+
+  ;
+   
+   const handleGetStartedClick = () => {
+     navigate('/OTP');
+   };
 
   return (
     <>
@@ -56,15 +64,15 @@ const BVN: React.FC = () => {
             {selectedOption === "BVN" ? (
               <>
                 <p className="bvn-text">BVN</p>
-                <input type="number" placeholder="Enter your BVN" />
+                <input type="number" placeholder="Enter your BVN" className="BVN_NIN" />
               </>
             ) : (
               <>
                 <p className="nin-text">NIN</p>
-                <input type="number" placeholder="Enter your NIN" />
+                <input type="number" placeholder="Enter your NIN" className="BVN_NIN" />
               </>
             )}
-            <button className="continue">Continue</button>
+            <button className="continue" onClick={handleGetStartedClick}>Continue</button>
             <br />
             <p className="already">
               Already have an account yet? <span className="login">Login</span>

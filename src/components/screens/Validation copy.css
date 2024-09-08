@@ -8,19 +8,19 @@ body {
 
  .fxemoji-bolt {
     height: 44px;
-    left: 110px;
+    left: 143px;
     position: absolute;
-    top: 650px;
+    top: 620px;
     width: 40px;
   }
-  .img-lady {
-       
-    border-radius: 189px;
-    margin: 30px;
-}
-
+ 
 .section-1 {
-   
+    img {
+       
+        border-radius: 189px;
+        margin: 30px;
+    }
+
 
     h1 {
         color: white;
@@ -54,7 +54,6 @@ body {
         flex-direction: row;
         justify-content: space-between;
         gap: 20px;
-        
 
         p {
             color: rgb(127, 18, 142);
@@ -118,7 +117,19 @@ body {
             }
         }
 
-     
+        input {
+            width: 370px;
+            margin-left: 30px;
+            padding: 10px;
+            border-radius: 6px;
+            border-color: rgb(127, 18, 142);
+        }
+
+        .bvn-text {
+            margin-left: 30px;
+            color: rgb(127, 18, 142);
+        }
+
         .continue {
             background-color: rgb(127, 18, 142);
             color: white;
@@ -223,8 +234,6 @@ body {
     color: #5c068c;
     font-family: "Montserrat-Bold", Helvetica;
     font-weight: 700;
-    top: -17px;
-        left: 250px;
    }
    .frame .div-3 {
     align-items: flex-start;
@@ -555,4 +564,20 @@ body {
     
     top: 0;
    }
-   
+   .Terms-container {
+    max-height: 500px; /* Set the maximum height for the scrollable container */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 15px;
+    border: 1px solid #ccc; /* Optional: Adds a border around the container */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    background-color: #f9f9f9; /* Optional: Adds a background color */
+  }
+
+  /* Ensure the text is aligned to the left */
+.terms-content {
+    text-align: left;
+    /* Optional: Adjust padding or margins if needed */
+    padding-left: 20px;
+    margin-left: 0;
+  }
+  

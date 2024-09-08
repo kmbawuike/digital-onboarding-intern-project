@@ -16,7 +16,7 @@ const NINentry: React.FC = () => {
           <div className="frame-3">
             <div className="input">
               <span className="nin">NIN</span>
-              <div className="rectangle">
+              <div className="rectangle2">
                 <input
                   type="text"
                   className="input-field"

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import './EnterNIN.css';
 
 const NINentry: React.FC = () => {
@@ -8,13 +9,20 @@ const NINentry: React.FC = () => {
     setNin(event.target.value); // Update state when input changes
   };
 
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate('/Valid2');
+  };
+
+
   return (
     <div className="main-container">
       <div className="frame-1">
         <span className="enter-your-nin">Enter your NIN</span>
         <div className="frame-2">
           <div className="frame-3">
-            <div className="input">
+            <div className="nin-input">
               <span className="nin">NIN</span>
               <div className="rectangle2">
                 <input
@@ -38,7 +46,9 @@ const NINentry: React.FC = () => {
                 backgroundColor: nin ? 'rgb(141,23,143)' : 'rgb(236,219,238)', // Color changes based on input
                 cursor: nin ? 'pointer' : 'not-allowed', // Change cursor style based on input
               }}
-              disabled={!nin} // Disable button if input is empty
+              disabled={!nin}
+              onClick={handleGetStartedClick}
+              // Disable button if input is empty
             >
               <span className="get-started">Proceed</span>
             </button>

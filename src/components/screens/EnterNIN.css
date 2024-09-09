@@ -17,10 +17,10 @@
   input,
   select,
   textarea,
-  button {
+  /* button {
     outline: 0;
   }
-  
+   */
   .main-container {
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@
     width: 373px;
     z-index: 3;
   }
-  .input {
+  .nin-input {
     flex-shrink: 0;
     position: relative;
     width: 373px;

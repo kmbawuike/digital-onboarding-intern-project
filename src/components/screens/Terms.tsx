@@ -6,10 +6,8 @@ import { useNavigate } from "react-router-dom";
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 import Buttons from "../tools/Buttons";
-import Stargazing from "../../img/Frame 12324.png";
-import Modal from "../Modals/NINModal"; // import the Modal component
-// import "./Default/Stargazing.css";
-import Profile from "./Pre-Profile";
+
+
 
 const Conditions = (): JSX.Element => {
  

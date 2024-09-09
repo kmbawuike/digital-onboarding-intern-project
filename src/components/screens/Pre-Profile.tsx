@@ -1,7 +1,14 @@
 import React from 'react';
 import './Profile.css';
+import { useNavigate } from 'react-router-dom';
 
 const Profile: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleGetStartedClick = () => {
+    navigate('/Valid3');
+  };
+
   return (
     <div className='main-container'>
       <div className='frame-1'>
@@ -9,27 +16,27 @@ const Profile: React.FC = () => {
           For your seamless omni-channel experience, the below channels are
           being pre-profiled for you.
         </span>
-        <div className='frame-2'>
-          <div className='frame-3'>
+        <div className='frame-II'>
+          <div className='frame-III'>
             <span className='ussd'>USSD</span>
-            <div className='frame-4'>
+            <div className='frame-IV'>
               <div className='mingcute-checkbox-fill'>
-                <div className='group-4' />
+                <div className='group-IV' />
               </div>
             </div>
           </div>
-          <div className='frame-5'>
+          <div className='frame-V'>
             <span className='chatbot'>Chatbot</span>
-            <div className='frame-6'>
+            <div className='frame-VI'>
               <div className='mingcute-checkbox-fill-7'>
-                <div className='group-8' />
+                <div className='group-VIII' />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button className='buttons'>
-        <span className='get-started'>Continue</span>
+      <button className='buttonsI'>
+        <span className='get-it' onClick={handleGetStartedClick}>Continue</span>
       </button>
     </div>
   );

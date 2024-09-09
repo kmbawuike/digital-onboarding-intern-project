@@ -167,7 +167,7 @@ const OTP: React.FC = () => {
                   <div className="input-wrapper">
                     <div className="text-wrapper-10" style={{ marginLeft: "30px" }}>Enter Date of Birth</div>
                     <div className="Input Container" style={{ marginRight: "100px" }}>
-                      <div className="input" style={{ marginTop: "30px" }}>
+                      <div className="date-input" style={{ marginTop: "30px" }}>
                         <DateTimePicker
                           selectedDate={selectedDate}
                           onDateChange={handleDateChange}

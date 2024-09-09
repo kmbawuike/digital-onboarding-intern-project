@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../img/fxemoji_bolt.svg";
-import "./Validation.css";
+import "./TermsValidation.css";
 import { useNavigate } from "react-router-dom";
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 import Buttons from "../tools/Buttons";
 import Stargazing from "../../img/Frame 12324.png";
-import Modal from "../Modals/NINModal"; // import the Modal component
+import Modal from "../Modals/T&CModal"; // import the Modal component
 import "./Default/Stargazing.css";
 import Profile from "./Pre-Profile";
+import Terms from "./T&C";
 
-const Validation2 = (): JSX.Element => {
+const Validation3 = (): JSX.Element => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   // Use useEffect to open the modal when the component mounts
@@ -56,7 +57,7 @@ const Validation2 = (): JSX.Element => {
           <section>
             <div className="frame">
               <div className="text-wrapper">Validation Successful</div>
-              <img className="group" alt="Group" src={Stargazing} />
+              <img className="stars" alt="Group" src={Stargazing} />
               <Buttons
                 border="none"
                 color=""
@@ -72,11 +73,11 @@ const Validation2 = (): JSX.Element => {
         </div>
 
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <Profile /> {/* Display the Profile component inside the modal */}
+          <Terms/> {/* Display the Profile component inside the modal */}
         </Modal>
       </body>
     </>
   );
 };
 
-export default Validation2;
+export default Validation3;

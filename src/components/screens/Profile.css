@@ -61,7 +61,7 @@
     text-align: center;
     z-index: 1;
   }
-  .frame-2 {
+  .frame-II {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -71,7 +71,7 @@
     position: relative;
     z-index: 2;
   }
-  .frame-3 {
+  .frame-III {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -102,7 +102,7 @@
     white-space: nowrap;
     z-index: 4;
   }
-  .frame-4 {
+  .frame-IV {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -121,7 +121,7 @@
     z-index: 6;
     overflow: hidden;
   }
-  .group-4 {
+  .group-IV {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -132,7 +132,7 @@
     background-size: 100% 100%;
     z-index: 7;
   }
-  .frame-5 {
+  .frame-V {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -163,7 +163,7 @@
     white-space: nowrap;
     z-index: 9;
   }
-  .frame-6 {
+  .frame-VI {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -182,7 +182,7 @@
     z-index: 11;
     overflow: hidden;
   }
-  .group-8 {
+  .group-VIII {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -193,7 +193,7 @@
     background-size: 100% 100%;
     z-index: 12;
   }
-  .buttons {
+  .buttonsI {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,7 +211,7 @@
     overflow: hidden;
     border-radius: 50px;
   }
-  .get-started {
+  .get-it {
     display: flex;
     align-items: flex-start;
     justify-content: center;

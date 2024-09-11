@@ -10,6 +10,7 @@ import arrow from "../../img/Buttons.png";
 import Box from "../tools/Elipse"; // Assuming Box is the component representing the ellipse
 import Man1 from "../../img/image 18.png";
 import "../screens/Default/Man-Frame.css";
+import { useNavigate } from "react-router-dom";
 
 
 const Form = (): JSX.Element => {
@@ -21,6 +22,11 @@ const Form = (): JSX.Element => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [uploadedImage, setUploadedImage] = useState<string | null>(null);
 
+  const navigate = useNavigate();
+
+  const HandleOTP2Click =()=>{
+    navigate('/OTP2');
+  }
   // State to handle button activation
   const [isButtonActive, setIsButtonActive] = useState(false);
 
@@ -146,9 +152,9 @@ const Form = (): JSX.Element => {
                     )}
                   </div>
                 </div>
-                <div className="div-2">
+                <div className="form-div-2">
                   <div className="input-wrapper">
-                    <div className="input">
+                    <div className="fom-input">
                       <div className="overlap-group">
                         <input
                           type="text"
@@ -157,13 +163,14 @@ const Form = (): JSX.Element => {
                           onChange={(e) => setFirstName(e.target.value)}
                           placeholder="First Name"
                           required
+                          style={{top:"24px"}}
                         />
                       </div>
                       <div className="text-wrapper-3">First Name</div>
                     </div>
                   </div>
                   <div className="input-wrapper">
-                    <div className="input">
+                    <div className="fom-input">
                       <div className="overlap-group">
                         <input
                           type="text"
@@ -172,13 +179,14 @@ const Form = (): JSX.Element => {
                           onChange={(e) => setLastName(e.target.value)}
                           placeholder="Last Name"
                           required
+                          style={{top:"24px"}}
                         />
                       </div>
                       <div className="text-wrapper-3">Last Name</div>
                     </div>
                   </div>
                   <div className="input-wrapper">
-                    <div className="input">
+                    <div className="fom-input">
                       <div className="overlap-group">
                         <input
                           type="text"
@@ -187,13 +195,14 @@ const Form = (): JSX.Element => {
                           onChange={(e) => setSignature(e.target.value)}
                           placeholder="Signature"
                           required
+                          style={{top:"24px"}}
                         />
                       </div>
                       <div className="text-wrapper-3">Signature</div>
                     </div>
                   </div>
                   <div className="input-wrapper">
-                    <div className="input">
+                    <div className="fom-input">
                       <div className="div-wrapper">
                         <input
                           type="email"
@@ -202,13 +211,14 @@ const Form = (): JSX.Element => {
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder="Email"
                           required
+                          
                         />
                       </div>
                       <div className="text-wrapper-3">Email</div>
                     </div>
                   </div>
                   <div className="input-wrapper">
-                    <div className="input">
+                    <div className="fom-input">
                       <div className="div-wrapper">
                         <input
                           type="tel"
@@ -217,6 +227,7 @@ const Form = (): JSX.Element => {
                           onChange={(e) => setPhoneNumber(e.target.value)}
                           placeholder="Phone Number"
                           required
+                          // 
                         />
                       </div>
                       <div className="text-wrapper-3">Phone Number</div>
@@ -231,7 +242,7 @@ const Form = (): JSX.Element => {
                       border="none"
                       color={isButtonActive ? "#60088C" : "lightgray"} // Button color based on isButtonActive state
                       height="70px"
-                      onClick={() => isButtonActive && console.log('Form Submitted')} // Button click handler
+                      onClick={HandleOTP2Click} // Button click handler
                       radius="20px"
                       width="320px"
                       children="Continue"

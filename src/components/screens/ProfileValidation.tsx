@@ -7,12 +7,12 @@ import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 import Buttons from "../tools/Buttons";
 import Stargazing from "../../img/Frame 12324.png";
-import Modal from "../Modals/T&CModal"; // import the Modal component
+import Modal from "../Modals/NINModal"; // import the Modal component
 import "./Default/Stargazing.css";
 import Profile from "./Pre-Profile";
-import Terms from "./T&C";
 
-const Validation3 = (): JSX.Element => {
+
+const Validation2 = (): JSX.Element => {
   const [isModalOpen, setModalOpen] = useState(false);
 
   // Use useEffect to open the modal when the component mounts
@@ -55,7 +55,7 @@ const Validation3 = (): JSX.Element => {
           </header>
           <br />
           <section>
-            <div className="frame">
+            <div className="validation-frame">
               <div className="text-wrapper">Validation Successful</div>
               <img className="group" alt="Group" src={Stargazing} />
               <Buttons
@@ -73,11 +73,11 @@ const Validation3 = (): JSX.Element => {
         </div>
 
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <Terms/> {/* Display the Profile component inside the modal */}
+          <Profile /> {/* Display the Profile component inside the modal */}
         </Modal>
       </body>
     </>
   );
 };
 
-export default Validation3;
+export default Validation2;

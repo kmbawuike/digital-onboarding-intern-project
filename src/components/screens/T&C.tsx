@@ -1,13 +1,22 @@
 import React from 'react';
 import './T&C.css';
 import Buttons from "../tools/Buttons"
+import { useNavigate } from 'react-router-dom';
 
 const Terms: React.FC = () => {
+   const navigate = useNavigate();
+
+  ;
+  
+    const handleGetStartedClick = () => {
+      navigate('/Success');
+   };
+
   return (
     <div className='main-container'>
       <span className='refer-and-earn'>Refer and Earn</span>
-      <div className='frame-1'>
-        <div className='group'>
+      <div className='frame-one'>
+        <div className='refer-group'>
           <span className='hint-text'>Referral</span>
           <div className='form-input-icon'>
             <div className='form-input-text'>
@@ -19,20 +28,20 @@ const Terms: React.FC = () => {
             placeholder='Enter Referral Code' />
           </div>
         </div>
-        <div className='frame-3'>
+        <div className='frame-three'>
           <div className='radio-button'>
             <input type="checkbox" className="custom-checkbox" />
           </div>
           <div className='my-numbers'>
             <span className='i-accept-the'>I accept the </span>
-            <a href='#' className='terms-and-conditions'>terms and conditions</a>
+            <a href='./TC' className='terms-and-conditions'>terms and conditions</a>
           </div>
         </div>
         <Buttons
                 border="none"
                 color=""
                 height="70px"
-                onClick={console.log} // Open modal on click
+                onClick={handleGetStartedClick} // Open modal on click
                 radius="20px"
                 width="433px"
                 children="Continue"

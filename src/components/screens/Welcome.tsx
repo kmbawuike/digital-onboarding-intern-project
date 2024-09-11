@@ -5,18 +5,14 @@ import Bolt from "../../assets/fxemoji_bolt.png";
 
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
-
-import "../screens/Default/Man-Frame.css";
 import "../screens/WelcomeScreen/style.css";
-import Modal from "../Modals/DescModal";
-import Desc from "./Description";
+
 
 const Welcome = (): JSX.Element => {
-  const [isModalOpen, setModalOpen] = useState(false);
+
   const navigate = useNavigate();
 
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
+ ;
   
   const handleGetStartedClick = () => {
     navigate('/Login');
@@ -31,7 +27,7 @@ const Welcome = (): JSX.Element => {
             <div className="overlap-group-2">
               <p className="everything-is-ea-y">
                 <span className="span">Ea</span>{" "}
-                <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} />
+                <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} style={{left:"79px;"}} />
                 <span className="span">y loans with </span>
                 <span className="FCMB">FastCash</span>
               </p>

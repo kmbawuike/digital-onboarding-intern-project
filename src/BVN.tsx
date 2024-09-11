@@ -4,9 +4,20 @@ import Bolt from "./assets/fxemoji_bolt.png";
 import FCMB from "./assets/download.png";
 import "./BVN.css";
 import Frame from "./components/tools/Frame";
+import { useNavigate } from "react-router-dom";
 
 const BVN: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<"BVN" | "NIN">("BVN");
+  const [inputValue, setInputValue] = useState("");
+  const navigate = useNavigate();
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(event.target.value);
+  };
+
+  const handleGetStartedClick = () => {
+    navigate('/Protect');
+  };
 
   return (
     <>
@@ -14,14 +25,11 @@ const BVN: React.FC = () => {
         <div className="section-1">
           <img src={Lady1} className="img-lady" alt="Lady with Phone" />
           <section>
-          <div className="overlap-group-2">
-                  <p className="everything-is-ea-y">
-                    <span className="span">Ea</span>  <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} /><span className="span">y loans with </span><span className="FCMB">FastCash</span>
-                   
-                  
-                  </p>
-                 
-                </div> 
+            <div className="overlap-group-2">
+              <p className="everything-is-ea-y">
+                <span className="span">Ea</span> <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} /><span className="span">y loans with </span><span className="FCMB">FastCash</span>
+              </p>
+            </div> 
             <div className="frame-3">
               <Frame />
             </div>
@@ -46,7 +54,7 @@ const BVN: React.FC = () => {
                 BVN
               </button>
               <button
-                className={`nin ${selectedOption === "NIN" ? "active" : ""}`}
+                className={`large ${selectedOption === "NIN" ? "active" : ""}`}
                 onClick={() => setSelectedOption("NIN")}
               >
                 NIN
@@ -56,18 +64,40 @@ const BVN: React.FC = () => {
             {selectedOption === "BVN" ? (
               <>
                 <p className="bvn-text">BVN</p>
-                <input type="number" placeholder="Enter your BVN" />
+                <input
+                  type="number"
+                  placeholder="Enter your BVN"
+                  className="BVN_NIN"
+                  onChange={handleInputChange}
+                  value={inputValue}
+                />
               </>
             ) : (
               <>
                 <p className="nin-text">NIN</p>
-                <input type="number" placeholder="Enter your NIN" />
+                <input
+                  type="number"
+                  placeholder="Enter your NIN"
+                  className="BVN_NIN"
+                  onChange={handleInputChange}
+                  value={inputValue}
+                />
               </>
             )}
-            <button className="continue">Continue</button>
+            <button
+              className="continue"
+              onClick={handleGetStartedClick}
+              disabled={!inputValue}
+              style={{
+                backgroundColor: inputValue ? "purple" : "lightgrey",
+                cursor: inputValue ? "pointer" : "not-allowed",
+              }}
+            >
+              Continue
+            </button>
             <br />
             <p className="already">
-              Already have an account yet? <span className="login">Login</span>
+              Already have an account yet? <span className="login" style={{marginLeft:"270px", marginTop:"-18px"}}>Login</span>
             </p>
           </section>
         </div>

@@ -1,4 +1,4 @@
-.modal-overlay {
+.NIN-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     z-index: 1000;
   }
   
-  .modal-content {
+  .NIN-modal-content {
     width: 533px;
     height: 370px;
     background: white;

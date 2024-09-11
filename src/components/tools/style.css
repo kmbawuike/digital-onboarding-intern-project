@@ -7,8 +7,9 @@
     gap: 5px;
     padding: 2px 3px;
     position: relative;
+    left: -67px;
    }
-   .button-frame .icons {
+   .button-frame .cool-icons {
     flex: 0 0 auto;
     position: relative;
    }

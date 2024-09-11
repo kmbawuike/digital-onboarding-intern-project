@@ -15,7 +15,7 @@
   height: 34px;
   left: 149px;
   position: absolute;
-  top: 630px;
+  top: 615px;
   width: 30px;
 }
 
@@ -100,5 +100,5 @@ margin-left: -70px;
 
 /* Additional Styles for Responsiveness */
 @media (max-width: 767px) {
-  
+
 }

@@ -7,7 +7,15 @@ import FCMB from "../../img/image 17.png";
 
 
 import "../screens/LoginScreen/style.css"
+import { useNavigate } from "react-router-dom";
 const LoginScreen = (): JSX.Element => {
+  const navigate = useNavigate();
+
+;
+ 
+ const handleGetStartedClick = () => {
+   navigate('/BVN');
+ };
   return (
     <>
       <body className="body">
@@ -57,7 +65,7 @@ const LoginScreen = (): JSX.Element => {
               </p>
             </div>
             <div className="frame-6">
-              <button className="banking-button personal">Personal Banking</button>
+              <button className="banking-button personal"  onClick={handleGetStartedClick}>Personal Banking</button>
               <button className="banking-button business">Business Banking</button>
             </div>
           </div>

@@ -1,4 +1,4 @@
-.TC-modal-overlay {
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,12 +11,12 @@
     z-index: 1000; /* Ensure it overlays other content */
   }
   
-  .TC-modal-content {
+  .modal-content {
     background: white;
     padding: 20px;
     border-radius: 10px;
-    width: 533px; /* Size of the modal */
-    height: 431.31px;
+    width: 375px; /* Size of the modal */
+    height: 614.31px;
     position: relative;
   }
   

@@ -7,21 +7,19 @@ import Frame from "../tools/Frame";
 import arrow from "../../img/Buttons.png";
 import Buttons from "../tools/Buttons";
 import Loader from "../tools/Loader";
-import Modal from "../Modals/Modal"; // Import the Modal component
+import Modal from "../Modals/FaceIDModal"; // Import the Modal component
 import FaceID from "./Face-ID";
 import Man1 from "../../img/image 18.png";
-
+import DateTimePicker from "../Datepicker";
+import { useNavigate } from "react-router-dom";
 
 const OTP: React.FC = () => {
-  const [dob, setDob] = useState("");
+  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [otp, setOtp] = useState(["", "", "", ""]);
   const [timeLeft, setTimeLeft] = useState(41);
   const [isConfirmVisible, setIsConfirmVisible] = useState(false);
   const [isButtonActive, setIsButtonActive] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
-
-  
-
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -33,9 +31,9 @@ const OTP: React.FC = () => {
 
   useEffect(() => {
     const isOtpComplete = otp.every((digit) => digit !== "");
-    const isDobFilled = dob !== "";
-    setIsButtonActive(isOtpComplete && isDobFilled);
-  }, [otp, dob]);
+    const isDateSelected = selectedDate !== null;
+    setIsButtonActive(isOtpComplete && isDateSelected);
+  }, [otp, selectedDate]);
 
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);
@@ -57,16 +55,33 @@ const OTP: React.FC = () => {
     }
   };
 
+  const handleDateChange = (date: Date | null) => {
+    setSelectedDate(date);
+  };
+
   const handleContinueClick = () => {
     if (isButtonActive) {
       setIsConfirmVisible(true);
       console.log("You clicked on the pink circle!");
+  
+      // Wait for 5 seconds before navigating to the validation page
+      setTimeout(() => {
+        setIsConfirmVisible(false);
+        // Replace with your navigation logic, e.g., using React Router
+        window.location.href = "/Valid"; // Adjust the URL as needed
+      }, 5000); // 5000 milliseconds = 5 seconds
     }
   };
-
+  
   const handleFacialRecognitionClick = () => {
     setIsModalOpen(true); // Open the modal
   };
+
+  const NavtoBack =useNavigate();
+
+  const HandleBackButton = () =>{
+    NavtoBack('./BVN');
+  }
 
   return (
     <>
@@ -87,7 +102,7 @@ const OTP: React.FC = () => {
             </div>
           </section>
         </div>
-          
+
         <div className="section-2">
           <header>
             <span>
@@ -102,7 +117,7 @@ const OTP: React.FC = () => {
           </header>
           <br />
           <section>
-            <div className="frame">
+            <div className="otp-frame">
               <div className="text-wrapper">Enter your OTP</div>
               <div className="div">
                 <div className="div-2">
@@ -157,22 +172,19 @@ const OTP: React.FC = () => {
                 </div>
                 <div className="div-4">
                   <div className="input-wrapper">
-                    <div className="text-wrapper-10"style={{marginLeft:"30px"}}>Enter Date of Birth</div>
-                    <div className="Input Container" style={{marginRight:"100px"}}>
-                    <div className="input" style={{marginTop:"30px", }}>
-                      <input
-                        type="date"
-                        className="date-input"
-                        value={dob}
-                        onChange={(e) => setDob(e.target.value)}
-                        placeholder="DD/MM/YYYY"
-                      />
+                    <div className="text-wrapper-10" style={{ marginLeft: "30px" }}>Enter Date of Birth</div>
+                    <div className="Input Container" style={{ marginRight: "100px" }}>
+                      <div className="date-input" style={{ marginTop: "30px" }}>
+                        <DateTimePicker
+                          selectedDate={selectedDate}
+                          onDateChange={handleDateChange}
+                        />
                       </div>
                     </div>
                   </div>
                   <div className="div-6" style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-                    <img className="img" alt="Buttons" src={arrow} />
-                    <Buttons 
+                    <img className="img" alt="Buttons" src={arrow} onClick={HandleBackButton} />
+                    <Buttons
                       border="none"
                       color={isButtonActive ? "purple" : "lightgray"} // Update button color based on isButtonActive
                       height="70px"
@@ -191,7 +203,7 @@ const OTP: React.FC = () => {
                       <span
                         className="span link"
                         onClick={handleFacialRecognitionClick} // Add click event handler
-                        style={{ cursor: "pointer", color: "purple", textDecoration: "underline", margin:"0px" }} // Make it look like a link
+                        style={{ cursor: "pointer", color: "purple", textDecoration: "underline", margin: "0px" }} // Make it look like a link
                       >
                         Try Facial Recognition
                       </span>

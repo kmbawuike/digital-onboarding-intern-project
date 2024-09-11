@@ -9,8 +9,8 @@
 .fxemoji-bolt {
   height: 50px;
   left: 115px;
-  position: fixed;
-  top: 393px;
+  position: absolute;
+  top: 615px;
   width: 35px;
   background-color: transparent
 }

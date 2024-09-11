@@ -13,13 +13,13 @@ body {
     top: 620px;
     width: 40px;
   }
-
-.section-1 {
-    img {
+  .img-lady {
        
-        border-radius: 189px;
-        margin: 30px;
-    }
+    border-radius: 189px;
+    margin: 30px;
+}
+.section-1 {
+   
 
 
     h1 {
@@ -89,7 +89,7 @@ body {
             padding-right: 40px;
 
             .bvn,
-            .nin {
+            .large {
                 background-color: rgba(239, 240, 244, 0.473);
                 background-size: contain;
                 color: rgb(127, 18, 142);
@@ -105,19 +105,19 @@ body {
             
 
             .bvn.active,
-            .nin.active {
+            .large.active {
                 background-color: rgb(127, 18, 142);
                 color: white;
             }
 
             .bvn:not(.active),
-            .nin:not(.active) {
+            .large:not(.active) {
                 background-color: rgba(239, 240, 244, 0.473);
                 color: rgb(127, 18, 142);
             }
         }
 
-        input {
+        .BVN_NIN {
             width: 370px;
             margin-left: 30px;
             padding: 10px;

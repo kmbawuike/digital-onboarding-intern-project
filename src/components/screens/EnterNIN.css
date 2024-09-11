@@ -17,10 +17,10 @@
   input,
   select,
   textarea,
-  button {
+  /* button {
     outline: 0;
   }
-  
+   */
   .main-container {
     display: flex;
     flex-direction: column;
@@ -80,7 +80,7 @@
     width: 373px;
     z-index: 3;
   }
-  .input {
+  .nin-input {
     flex-shrink: 0;
     position: relative;
     width: 373px;
@@ -101,13 +101,13 @@
     white-space: nowrap;
     z-index: 6;
   }
-  .rectangle {
+  .rectangle2 {
     position: absolute;
     width: 372px;
     height: 50px;
     top: 23px;
     left: 0.5px;
-    border: 1px solid #c4c4c4;
+ 
     z-index: 5;
     overflow: hidden;
     border-radius: 10px;
@@ -140,7 +140,7 @@
     white-space: nowrap;
     z-index: 7;
   }
-  .frame-5 {
+  .skip-frame-5 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -151,7 +151,7 @@
     position: relative;
     z-index: 8;
   }
-  .buttons {
+  .skip-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,7 +191,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .buttons-6 {
+  .skip-buttons-6 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,7 +211,7 @@
     border-radius: 50px;
   }
   
-  .get-started {
+  .proceed-get-started {
     display: flex;
     align-items: flex-start;
     justify-content: center;

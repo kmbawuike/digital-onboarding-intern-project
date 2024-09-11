@@ -1,5 +1,5 @@
 import React from "react";
-import "./NINModal.css";
+import "./FaceIDModal.css";
 
 interface ModalProps {
   children: React.ReactNode;
@@ -11,8 +11,8 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="NIN-modal-overlay">
-      <div className="NIN-modal-content">
+    <div className="modal-overlay">
+      <div className="modal-content">
         {children}
         <button className="modal-close" onClick={onClose}>
           X

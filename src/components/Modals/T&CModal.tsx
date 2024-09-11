@@ -11,8 +11,8 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
+    <div className="TC-modal-overlay">
+      <div className="TC-modal-content">
         {children}
         <button className="modal-close" onClick={onClose}>
           X

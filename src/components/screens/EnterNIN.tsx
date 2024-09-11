@@ -12,7 +12,7 @@ const NINentry: React.FC = () => {
   const navigate = useNavigate();
 
   const handleGetStartedClick = () => {
-    navigate('/Valid2');
+    navigate('/NIN');
   };
 
 
@@ -36,12 +36,12 @@ const NINentry: React.FC = () => {
               <span className="enter-your-nin-4">Enter your NIN</span>
             </div>
           </div>
-          <div className="frame-5">
-            <button className="buttons">
+          <div className="skip-frame-5">
+            <button className="skip-buttons">
               <span className="skip">Skip</span>
             </button>
             <button
-              className="buttons-6"
+              className="skip-buttons-6"
               style={{
                 backgroundColor: nin ? 'rgb(141,23,143)' : 'rgb(236,219,238)', // Color changes based on input
                 cursor: nin ? 'pointer' : 'not-allowed', // Change cursor style based on input
@@ -50,7 +50,7 @@ const NINentry: React.FC = () => {
               onClick={handleGetStartedClick}
               // Disable button if input is empty
             >
-              <span className="get-started">Proceed</span>
+              <span className="proceed-get-started">Proceed</span>
             </button>
           </div>
         </div>

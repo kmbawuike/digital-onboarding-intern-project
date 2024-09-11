@@ -8,9 +8,9 @@ body {
 
  .fxemoji-bolt {
     height: 44px;
-    left: 143px;
+    left: 113px;
     position: absolute;
-    top: 620px;
+    top: 650px;
     width: 40px;
   }
  
@@ -44,7 +44,7 @@ body {
     border-radius: 19px;
     margin: 20px;
 
-    span {
+    /* span {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -58,7 +58,7 @@ body {
         img {
             margin-top: -10px;
         }
-    }
+    } */
 
     section {
         h1 {
@@ -137,16 +137,8 @@ body {
             border-color: transparent;
         }
 
-        .already {
-            text-align: center;
-            left: 250px;
-        }
-
-        .login {
-            color: rgb(127, 18, 142);
-            font-weight: 200px;
-            text-align: center;
-        }
+     
+      
     }
 }
 .motto{

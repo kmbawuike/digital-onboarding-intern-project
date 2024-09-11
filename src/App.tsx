@@ -9,8 +9,11 @@ import Valid3 from './components/screens/TermsValidation';
 import TC from './components/screens/Terms'
 import Terms from './components/screens/T&C';
 import Conditions from './components/screens/Terms';
-import Success from './components/screens/Successful';
- 
+import Done from './components/screens/Successful';
+import Protect from './components/screens/Protect'
+import NIN from './components/screens/ProtectNIN'
+import Form from './components/screens/Form';
+import OTP2 from './components/screens/OTP2';
 const App = () => {
    return (
       <>
@@ -23,8 +26,11 @@ const App = () => {
             <Route path='/Valid2' element={<Valid2/>}/>
             <Route path='/Valid3' element={<Valid3/>}/>
             <Route path='/TC' element={<Conditions/>}/>
-            
-            
+            <Route path ='/Success' element={<Done/>}/> 
+            <Route path ='/Protect' element={<Protect/>}/> 
+            <Route path ='/NIN' element={<NIN/>}/> 
+            <Route path ='/Form' element={<Form/>}/>
+            <Route path ='/OTP2' element={<OTP2/>}/>
             
          </Routes>
       </>

@@ -58,7 +58,7 @@
     width: 433px;
     z-index: 1;
   }
-  .group {
+  .refer-group {
     flex-shrink: 0;
     position: relative;
     width: 433px;
@@ -109,7 +109,7 @@
     background-size: 100% 100%;
     z-index: 5;
   }
-  .icons {
+  .link-icons {
     position: absolute;
     width: 20px;
     height: 20px;

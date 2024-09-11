@@ -4,19 +4,19 @@ import Buttons from "../tools/Buttons"
 import { useNavigate } from 'react-router-dom';
 
 const Terms: React.FC = () => {
-//   const navigate = useNavigate();
+   const navigate = useNavigate();
 
-//  ;
+  ;
   
-//   const handleGetStartedClick = () => {
-//     navigate('/Successful');
-//   };
+    const handleGetStartedClick = () => {
+      navigate('/Success');
+   };
 
   return (
     <div className='main-container'>
       <span className='refer-and-earn'>Refer and Earn</span>
       <div className='frame-one'>
-        <div className='group'>
+        <div className='refer-group'>
           <span className='hint-text'>Referral</span>
           <div className='form-input-icon'>
             <div className='form-input-text'>
@@ -41,7 +41,7 @@ const Terms: React.FC = () => {
                 border="none"
                 color=""
                 height="70px"
-                onClick={console.log} // Open modal on click
+                onClick={handleGetStartedClick} // Open modal on click
                 radius="20px"
                 width="433px"
                 children="Continue"

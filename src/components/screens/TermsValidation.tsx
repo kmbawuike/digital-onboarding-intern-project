@@ -55,7 +55,7 @@ const Validation3 = (): JSX.Element => {
           </header>
           <br />
           <section>
-            <div className="frame">
+            <div className="TC-frame">
               <div className="text-wrapper">Validation Successful</div>
               <img className="stars" alt="Group" src={Stargazing} />
               <Buttons

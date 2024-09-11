@@ -6,7 +6,7 @@ import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 
 import "./Default/Referral.css"
-const Default = (): JSX.Element => {
+const Done = (): JSX.Element => {
   
 
   return (
@@ -50,11 +50,11 @@ const Default = (): JSX.Element => {
         Account Created Sucessfully
        
       </span>
-      <div className='group'>
+      <div className='successful-group'>
        
       </div>
      
-      <div className='frame-2'>
+      <div className='successful-frame-2'>
         <div className='youve-successfully'>
           <span className='you-have-successfully-opened-an-account-with-fcmb'>
             You have sucessfully opened an account with FCMB. Your account number is
@@ -71,11 +71,11 @@ const Default = (): JSX.Element => {
           </span>
         </div>
       </div>
-      <div className='frame-4'>
+      <div className='successful-frame-4'>
         <span className='successfully'>
           Download the FCMB mobile app to enjoy seemless onboarding experience
         </span>
-        <div className='badges'>
+        <div className='successful-badges'>
           <div className='download-badge-google-play'>
            
           </div>
@@ -92,4 +92,4 @@ const Default = (): JSX.Element => {
   );
 };
 
-export default Default;
+export default Done;

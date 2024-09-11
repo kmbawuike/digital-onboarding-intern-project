@@ -11,6 +11,7 @@ import Modal from "../Modals/Modal"; // Import the Modal component
 import FaceID from "./Face-ID";
 import Man1 from "../../img/image 18.png";
 import "../screens/Default/Man-Frame.css";
+import { useNavigate } from "react-router-dom";
 
 const OTP2: React.FC = () => {
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -60,11 +61,10 @@ const OTP2: React.FC = () => {
     }
   };
 
+  const navigate = useNavigate();
   const handleContinueClick = () => {
-    if (isButtonActive) {
-      setIsConfirmVisible(true);
-      console.log("You clicked on the pink circle!");
-    }
+    navigate('/Valid2')
+   
   };
 
   const handleFacialRecognitionClick = () => {
@@ -105,7 +105,7 @@ const OTP2: React.FC = () => {
           </header>
           <br />
           <section>
-            <div className="frame">
+            <div className="otp-frame">
               <div className="text-wrapper" style={{ marginRight: "0px" }}>
                 Enter your OTP
               </div>

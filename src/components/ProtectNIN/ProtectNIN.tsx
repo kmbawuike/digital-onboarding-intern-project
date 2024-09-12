@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../img/fxemoji_bolt.svg";
-import './Default/Protect.css'
+import './Protect.css'
 import { useNavigate } from "react-router-dom";
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
@@ -9,7 +9,7 @@ import Buttons from "../tools/Buttons";
 import Stargazing from "../../img/Frame 12324.png";
 import NINentry from "../EnterNIN/EnterNIN";
 import Modal from "../Modals/FaceIDModal"; // import the Modal component
-import "./Default/Stargazing.css";
+import "../screens/Default/Stargazing.css";
 
 import "../OTP/OTP.css";
 
@@ -17,7 +17,7 @@ import arrow from "../../img/Buttons.png";
 
 import Loader from "../tools/Loader";
 
-import FaceID from "./Face-ID";
+import FaceID from "../screens/Face-ID";
 import Man1 from "../../img/image 18.png";
 import DateTimePicker from "../Datepicker";
  
@@ -58,7 +58,7 @@ const NIN = (): JSX.Element => {
               </p>
             </div>
         
-            <div className="div">
+            <div className="div" style={{marginLeft:"270px"}}>
             <Frame />
           </div>
             

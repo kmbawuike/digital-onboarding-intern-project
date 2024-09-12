@@ -10,8 +10,8 @@ import TC from './components/screens/Terms'
 import Terms from './components/screens/T&C';
 import Conditions from './components/screens/Terms';
 import Done from './components/screens/Successful';
-import Protect from './components/screens/Protect'
-import NIN from './components/screens/ProtectNIN'
+import Protect from './components/ProtectNIN/Protect'
+import NIN from './components/ProtectNIN/ProtectNIN'
 import Form from './components/Form/Form';
 import OTP2 from './components/OTP/OTP2';
 const App = () => {

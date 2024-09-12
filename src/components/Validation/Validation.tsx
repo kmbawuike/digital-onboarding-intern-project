@@ -33,7 +33,7 @@ const Validation = (): JSX.Element => {
               </p>
             </div>
         
-            <div className="div">
+            <div className="div" style={{marginLeft:"270px"}}>
             <Frame />
           </div>
             

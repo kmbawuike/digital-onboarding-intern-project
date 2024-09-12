@@ -1,15 +1,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../assets/fxemoji_bolt.png";
-import "./Default/OTP.css";
+import "../screens/Default/OTP.css";
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
-import "./Default/Form.css";
+import "./Form.css";
 import Buttons from "../tools/Buttons";
 import arrow from "../../img/Buttons.png";
 import Box from "../tools/Elipse"; // Assuming Box is the component representing the ellipse
 import Man1 from "../../img/image 18.png";
-import "../screens/Default/Man-Frame.css";
+
 import { useNavigate } from "react-router-dom";
 
 

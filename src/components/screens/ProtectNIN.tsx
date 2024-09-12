@@ -7,11 +7,11 @@ import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 import Buttons from "../tools/Buttons";
 import Stargazing from "../../img/Frame 12324.png";
-import NINentry from "./EnterNIN";
+import NINentry from "../EnterNIN/EnterNIN";
 import Modal from "../Modals/FaceIDModal"; // import the Modal component
 import "./Default/Stargazing.css";
 
-import "./OTP.css";
+import "../OTP/OTP.css";
 
 import arrow from "../../img/Buttons.png";
 

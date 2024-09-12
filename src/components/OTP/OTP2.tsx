@@ -2,24 +2,31 @@ import React, { useState, useEffect } from "react";
 import Lady1 from "../../assets/Lady with Phone 1.png";
 import Bolt from "../../img/fxemoji_bolt.svg";
 import FCMB from "../../assets/download.png";
-import "./OTP.css";
+import "./OTP2.css";
 import Frame from "../tools/Frame";
 import arrow from "../../img/Buttons.png";
 import Buttons from "../tools/Buttons";
 import Loader from "../tools/Loader";
-import Modal from "../Modals/FaceIDModal"; // Import the Modal component
-import FaceID from "./Face-ID";
+import Modal from "../Modals/Modal"; // Import the Modal component
+import FaceID from "../screens/Face-ID";
 import Man1 from "../../img/image 18.png";
-import DateTimePicker from "../Datepicker";
+
 import { useNavigate } from "react-router-dom";
 
-const OTP: React.FC = () => {
-  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
+const OTP2: React.FC = () => {
   const [otp, setOtp] = useState(["", "", "", ""]);
   const [timeLeft, setTimeLeft] = useState(41);
   const [isConfirmVisible, setIsConfirmVisible] = useState(false);
   const [isButtonActive, setIsButtonActive] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false); // State to control modal visibility
+
+  // State to manage the active section for the sliding animation
+  const [activeSection, setActiveSection] = useState<"section-1" | "man-frame">("section-1");
+
+  // Handle frame click to switch sections
+  const handleFrameClick = () => {
+    setActiveSection((prevSection) => (prevSection === "section-1" ? "man-frame" : "section-1"));
+  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -31,9 +38,8 @@ const OTP: React.FC = () => {
 
   useEffect(() => {
     const isOtpComplete = otp.every((digit) => digit !== "");
-    const isDateSelected = selectedDate !== null;
-    setIsButtonActive(isOtpComplete && isDateSelected);
-  }, [otp, selectedDate]);
+    setIsButtonActive(isOtpComplete);
+  }, [otp]);
 
   const formatTime = (seconds: number) => {
     const minutes = Math.floor(seconds / 60);
@@ -55,33 +61,15 @@ const OTP: React.FC = () => {
     }
   };
 
-  const handleDateChange = (date: Date | null) => {
-    setSelectedDate(date);
+  const navigate = useNavigate();
+  const handleContinueClick = () => {
+    navigate('/Valid2')
+   
   };
 
-  const handleContinueClick = () => {
-    if (isButtonActive) {
-      setIsConfirmVisible(true);
-      console.log("You clicked on the pink circle!");
-  
-      // Wait for 5 seconds before navigating to the validation page
-      setTimeout(() => {
-        setIsConfirmVisible(false);
-        // Replace with your navigation logic, e.g., using React Router
-        window.location.href = "/Valid"; // Adjust the URL as needed
-      }, 5000); // 5000 milliseconds = 5 seconds
-    }
-  };
-  
   const handleFacialRecognitionClick = () => {
     setIsModalOpen(true); // Open the modal
   };
-
-  const NavtoBack =useNavigate();
-
-  const HandleBackButton = () =>{
-    NavtoBack('./BVN');
-  }
 
   return (
     <>
@@ -118,17 +106,17 @@ const OTP: React.FC = () => {
           <br />
           <section>
             <div className="otp-frame">
-              <div className="text-wrapper">Enter your OTP</div>
+              <div className="text-wrapper" style={{ marginRight: "0px" }}>
+                Enter your OTP
+              </div>
               <div className="div">
                 <div className="div-2">
                   <p className="you-are-about-to-top">
-                    <span className="span">
-                      OTP was sent to the phone number  
-                    </span>
-                    <span className="text-wrapper-2">0803*****90</span>
-                    <span className="span">
-                      Check and input the details
-                    </span>
+                    <div className="Big">
+                      <span className="span">OTP was sent to the phone number</span>
+                      <span className="text-wrapper-2"  style={{ color: "purple", marginLeft: "209px", marginTop:"-16px" }}>0803*****90</span>
+                    </div>
+                    <span className="span">Check and input the details</span>
                   </p>
                   <div className="otp-container">
                     <input
@@ -171,57 +159,29 @@ const OTP: React.FC = () => {
                   </div>
                 </div>
                 <div className="div-4">
-                  <div className="input-wrapper">
-                    <div className="text-wrapper-10" style={{ marginLeft: "30px" }}>Enter Date of Birth</div>
-                    <div className="Input Container" style={{ marginRight: "100px" }}>
-                      <div className="date-input" style={{ marginTop: "30px" }}>
-                        <DateTimePicker
-                          selectedDate={selectedDate}
-                          onDateChange={handleDateChange}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="div-6" style={{ display: "flex", alignItems: "center", gap: "20px" }}>
-                    <img className="img" alt="Buttons" src={arrow} onClick={HandleBackButton} />
+                  <div
+                    className="div-6"
+                    style={{ display: "flex", alignItems: "center", gap: "20px" }}
+                  >
+                    <img className="img" alt="Buttons" src={arrow} />
                     <Buttons
                       border="none"
-                      color={isButtonActive ? "purple" : "lightgray"} // Update button color based on isButtonActive
+                      color={isButtonActive ? "purple" : "lightgray"}
                       height="70px"
-                      onClick={handleContinueClick} // Update click handler
+                      onClick={handleContinueClick}
                       radius="20px"
                       width="350px"
                       children="Continue"
-                      disabled={!isButtonActive} // Disable button if form is incomplete
+                      disabled={!isButtonActive}
                     />
                   </div>
-                </div>
-                <div className="group10">
-                  <div className="label">
-                    <p className="don-t-have-this-try">
-                      <span className="text-wrapper">Don’t have this? </span>
-                      <span
-                        className="span link"
-                        onClick={handleFacialRecognitionClick} // Add click event handler
-                        style={{ cursor: "pointer", color: "purple", textDecoration: "underline", margin: "0px" }} // Make it look like a link
-                      >
-                        Try Facial Recognition
-                      </span>
-                    </p>
-                  </div>
-                  {isConfirmVisible && (
-                    <div className="label-confirm">
-                      <div className="login-successful">Confirming your details</div>
-                      <Loader />
-                    </div>
-                  )}
                 </div>
               </div>
             </div>
           </section>
         </div>
 
-        {/* Modal with FaceID component */}
+       
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
           <FaceID />
         </Modal>
@@ -230,4 +190,4 @@ const OTP: React.FC = () => {
   );
 };
 
-export default OTP;
+export default OTP2;

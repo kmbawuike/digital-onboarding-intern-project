@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../img/fxemoji_bolt.svg";
 import "./Validation.css";
@@ -7,19 +7,15 @@ import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 import Buttons from "../tools/Buttons";
 import Stargazing from "../../img/Frame 12324.png";
+import NINentry from "../EnterNIN/EnterNIN";
 import Modal from "../Modals/NINModal"; // import the Modal component
-import "./Default/Stargazing.css";
-import Profile from "./Pre-Profile";
+import "../screens/Default/Stargazing.css";
 
 
-const Validation2 = (): JSX.Element => {
+const Validation = (): JSX.Element => {
   const [isModalOpen, setModalOpen] = useState(false);
 
-  // Use useEffect to open the modal when the component mounts
-  useEffect(() => {
-    setModalOpen(true);
-  }, []);
-
+  const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
 
   return (
@@ -36,9 +32,11 @@ const Validation2 = (): JSX.Element => {
                 <span className="FCMB">FastCash</span>
               </p>
             </div>
+        
             <div className="div">
-              <Frame />
-            </div>
+            <Frame />
+          </div>
+            
           </section>
         </div>
         <div className="section-2">
@@ -54,18 +52,18 @@ const Validation2 = (): JSX.Element => {
             </span>
           </header>
           <br />
-          <section>
-            <div className="validation-frame">
+          <section className="success">
+            <div className="frame1">
               <div className="text-wrapper">Validation Successful</div>
               <img className="group" alt="Group" src={Stargazing} />
               <Buttons
                 border="none"
                 color=""
                 height="70px"
+                onClick={openModal} // Open modal on click
                 radius="20px"
                 width="350px"
                 children="Continue"
-                onClick={console.log}
                 disabled={false}
               />
             </div>
@@ -73,11 +71,11 @@ const Validation2 = (): JSX.Element => {
         </div>
 
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <Profile /> {/* Display the Profile component inside the modal */}
+          <NINentry /> {/* Display the NIN entry form inside the modal */}
         </Modal>
       </body>
     </>
   );
 };
 
-export default Validation2;
+export default Validation;

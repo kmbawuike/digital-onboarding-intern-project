@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Lady1 from "./assets/Lady with Phone 1.png";
-import Bolt from "./assets/fxemoji_bolt.png";
-import FCMB from "./assets/download.png";
+import Lady1 from "../../assets/Lady with Phone 1.png";
+import Bolt from "../../assets/fxemoji_bolt.png";
+import FCMB from "../../assets/download.png"
 import "./BVN.css";
-import Frame from "./components/tools/Frame";
+import Frame from "../tools/Frame";
 import { useNavigate } from "react-router-dom";
 
 const BVN: React.FC = () => {

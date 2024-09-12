@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Lady1 from "../../img/Lady with Phone 1.png";
-import Bolt from "../../assets/fxemoji_bolt.png";
+import Lady1 from "../../../img/Lady with Phone 1.png";
+import Bolt from "../../../assets/fxemoji_bolt.png";
 
-import Frame from "../tools/Frame";
-import FCMB from "../../img/image 17.png";
-import "../screens/WelcomeScreen/style.css";
+import Frame from "../../tools/Frame";
+import FCMB from "../../../img/image 17.png";
+import "./style.css";
 
 
 const Welcome = (): JSX.Element => {

@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
-import Lady1 from "../../img/Lady with Phone 1.png";
-import Bolt from "../../assets/fxemoji_bolt.png";
+import Lady1 from "../../../img/Lady with Phone 1.png";
+import Bolt from "../../../assets/fxemoji_bolt.png";
 
-import Frame from "../tools/Frame";
-import FCMB from "../../img/image 17.png";
+import Frame from "../../tools/Frame";
+import FCMB from "../../../img/image 17.png";
 
 
-import "../screens/LoginScreen/style.css"
+import "./style.css"
 import { useNavigate } from "react-router-dom";
 const LoginScreen = (): JSX.Element => {
   const navigate = useNavigate();

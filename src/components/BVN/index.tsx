@@ -4,7 +4,7 @@ import Bolt from "../../assets/fxemoji_bolt.png";
 import FCMB from "../../assets/download.png"
 import "./BVN.css";
 import Frame from "../tools/Frame";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const BVN: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<"BVN" | "NIN">("BVN");
@@ -38,7 +38,9 @@ const BVN: React.FC = () => {
         <div className="section-2">
           <header>
             <span>
-              <p>Go back home </p>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <p>Go back home</p>
+              </Link>
               <img src={FCMB} className="logo" style={{ width: 50 }} alt="Logo" />
             </span>
           </header>

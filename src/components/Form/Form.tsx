@@ -10,7 +10,7 @@ import arrow from "../../img/Buttons.png";
 import Box from "../tools/Elipse"; // Assuming Box is the component representing the ellipse
 import Man1 from "../../img/image 18.png";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Form = (): JSX.Element => {
@@ -111,7 +111,9 @@ const Form = (): JSX.Element => {
         <div className="section-2">
           <header>
             <span>
-              <p>Go back home </p>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <p>Go back home</p>
+              </Link>
               <img
                 src={FCMB}
                 className="logo"

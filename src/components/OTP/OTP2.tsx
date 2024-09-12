@@ -11,7 +11,7 @@ import Modal from "../Modals/Modal"; // Import the Modal component
 import FaceID from "../screens/Face-ID";
 import Man1 from "../../img/image 18.png";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const OTP2: React.FC = () => {
   const [otp, setOtp] = useState(["", "", "", ""]);
@@ -94,7 +94,9 @@ const OTP2: React.FC = () => {
         <div className="section-2">
           <header>
             <span>
-              <p>Go back home </p>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <p>Go back home</p>
+              </Link>
               <img
                 src={FCMB}
                 className="logo"

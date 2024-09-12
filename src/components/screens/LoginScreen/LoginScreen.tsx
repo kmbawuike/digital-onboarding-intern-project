@@ -7,7 +7,7 @@ import FCMB from "../../../img/image 17.png";
 
 
 import "./style.css"
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const LoginScreen = (): JSX.Element => {
   const navigate = useNavigate();
 
@@ -41,7 +41,9 @@ const LoginScreen = (): JSX.Element => {
         <div className="section-2">
           <header>
             <span>
-              <p>Go back home </p>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <p>Go back home</p>
+              </Link>
               <img
                 src={FCMB}
                 className="logo"

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../img/fxemoji_bolt.svg";
 import "./Validation.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 import Buttons from "../tools/Buttons";
@@ -42,7 +42,9 @@ const Validation = (): JSX.Element => {
         <div className="section-2">
           <header>
             <span>
-              <p>Go back home </p>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <p>Go back home</p>
+              </Link>
               <img
                 src={FCMB}
                 className="logo"

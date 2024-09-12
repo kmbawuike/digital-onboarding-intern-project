@@ -11,7 +11,7 @@ import Modal from "../Modals/FaceIDModal"; // Import the Modal component
 import FaceID from "../screens/Face-ID";
 import Man1 from "../../img/image 18.png";
 import DateTimePicker from "../Datepicker";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const OTP: React.FC = () => {
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
@@ -106,7 +106,9 @@ const OTP: React.FC = () => {
         <div className="section-2">
           <header>
             <span>
-              <p>Go back home </p>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <p>Go back home</p>
+              </Link>
               <img
                 src={FCMB}
                 className="logo"

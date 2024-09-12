@@ -6,6 +6,7 @@ import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 
 import "./Default/Referral.css"
+import { Link } from "react-router-dom";
 const Done = (): JSX.Element => {
   
 
@@ -34,7 +35,9 @@ const Done = (): JSX.Element => {
         <div className="section-2">
           <header>
             <span>
-              <p>Go back home </p>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <p>Go back home</p>
+              </Link>
               <img
                 src={FCMB}
                 className="logo"

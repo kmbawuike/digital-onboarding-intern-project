@@ -69,6 +69,9 @@ const Form = (): JSX.Element => {
     setActiveSection((prevSection) => (prevSection === "section-1" ? "man-frame" : "section-1"));
   };
 
+  const HandleBackButton = () =>{
+    navigate('/NIN')
+  }
   return (
     <>
       <body className="body">
@@ -239,7 +242,7 @@ const Form = (): JSX.Element => {
                     className="div-3"
                     style={{ display: "flex", alignItems: "center", gap: "20px" }}
                   >
-                    <img className="img" alt="Buttons" src={arrow} />
+                    <img className="img" alt="Buttons" src={arrow} onClick={HandleBackButton} />
                     <Buttons
                       border="none"
                       color={isButtonActive ? "#60088C" : "lightgray"} // Button color based on isButtonActive state

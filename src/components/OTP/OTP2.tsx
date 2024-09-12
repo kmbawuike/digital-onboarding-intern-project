@@ -67,6 +67,11 @@ const OTP2: React.FC = () => {
    
   };
 
+const HandleBackButton = () =>{
+
+  navigate('/Form')
+}
+
   const handleFacialRecognitionClick = () => {
     setIsModalOpen(true); // Open the modal
   };
@@ -165,7 +170,7 @@ const OTP2: React.FC = () => {
                     className="div-6"
                     style={{ display: "flex", alignItems: "center", gap: "20px" }}
                   >
-                    <img className="img" alt="Buttons" src={arrow} />
+                    <img className="img" alt="Buttons" src={arrow} onClick={HandleBackButton} />
                     <Buttons
                       border="none"
                       color={isButtonActive ? "purple" : "lightgray"}

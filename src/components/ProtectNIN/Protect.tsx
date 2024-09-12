@@ -34,7 +34,7 @@ const Protect = (): JSX.Element => {
   const NavtoBack = useNavigate();
 
   const HandleBackButton = () => {
-    NavtoBack('./BVN');
+    NavtoBack('/BVN');
   };
 
   const handlePhoneNumberChange = (event: React.ChangeEvent<HTMLInputElement>) => {

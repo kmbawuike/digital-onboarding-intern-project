@@ -34,7 +34,7 @@ const NIN = (): JSX.Element => {
   const NavtoBack = useNavigate();
 
   const HandleBackButton = () => {
-    NavtoBack('./BVN');
+    NavtoBack('/Valid');
   };
 
   const handlePhoneNumberChange = (event: React.ChangeEvent<HTMLInputElement>) => {

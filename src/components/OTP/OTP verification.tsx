@@ -80,7 +80,7 @@ const OTP: React.FC = () => {
   const NavtoBack =useNavigate();
 
   const HandleBackButton = () =>{
-    NavtoBack('./BVN');
+    NavtoBack('/Protect');
   }
 
   return (

@@ -6,8 +6,7 @@ import OTP from './components/OTP/OTP verification';
 import Validation from './components/Validation/Validation';
 import Valid2 from './components/Validation/ProfileValidation';
 import Valid3 from './components/Validation/TermsValidation';
-import TC from './components/screens/Terms'
-import Terms from './components/screens/T&C';
+
 import Conditions from './components/screens/Terms';
 import Done from './components/screens/Successful';
 import Protect from './components/ProtectNIN/Protect'

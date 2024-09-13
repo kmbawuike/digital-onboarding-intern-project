@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import Lady1 from "../../../img/Lady with Phone 1.png";
 import Bolt from "../../../assets/fxemoji_bolt.png";
@@ -7,13 +7,9 @@ import Frame from "../../tools/Frame";
 import FCMB from "../../../img/image 17.png";
 import "./style.css";
 
-
 const Welcome = (): JSX.Element => {
-
   const navigate = useNavigate();
 
- ;
-  
   const handleGetStartedClick = () => {
     navigate('/Login');
   };
@@ -56,8 +52,15 @@ const Welcome = (): JSX.Element => {
               <div className="Info">
                 <div className="section-heading">
                   <div className="section-title">FCMB Online Account Opening</div>
-                  <div className="section-title-2">Welcome!!!</div>
-                  <p className="description">
+                  <div className="section-title-2" style={{marginLeft:"23px"}}>Welcome!!!</div>
+                  <p
+                    className="description"
+                    style={{
+                      textAlign: "left",
+                      margin: "0 20px", // Adjust margins as needed
+                      lineHeight: "1.5",
+                    }}
+                  >
                     <span className="text-wrapper-4">
                       WHAT DO I NEED TO OPEN AN ACCOUNT?
                       <br />

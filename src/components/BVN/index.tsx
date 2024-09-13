@@ -98,8 +98,8 @@ const BVN: React.FC = () => {
               Continue
             </button>
             <br />
-            <p className="already">
-              Already have an account yet? <span className="login" style={{marginLeft:"270px", marginTop:"-18px"}}>Login</span>
+            <p className="already" style={{marginRight:"87px"}}>
+              Already have an account yet? <span className="login" style={{marginLeft:"277px", marginTop:"-18px"}}>Login</span>
             </p>
           </section>
         </div>

@@ -9,7 +9,7 @@ interface FrameProps {
 const Frame: React.FC<FrameProps> = ({ onClick }): JSX.Element => {
   return (
     <div className="button-frame" onClick={onClick} style={{ cursor: "pointer" }}>
-      <img className="cool-icons" src={Cycle} alt="Cycle Icon" />
+      <img className="cool-icons" src={Cycle} alt="Cycle Icon" style={{left:"32px"}} />
       <div className="rectangle" />
     </div>
   );

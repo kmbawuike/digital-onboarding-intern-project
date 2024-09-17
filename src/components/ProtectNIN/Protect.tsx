@@ -47,7 +47,7 @@ const Protect = (): JSX.Element => {
 
   return (
     <>
-      <body className="body">
+      <div className="body">
         <div className="section-1">
           <img src={Lady1} className="img-lady" alt="Lady with Phone" />
           <section>
@@ -132,7 +132,7 @@ const Protect = (): JSX.Element => {
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
           <FaceID />
         </Modal>
-      </body>
+      </div>
     </>
   );
 };

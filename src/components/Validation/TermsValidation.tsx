@@ -24,7 +24,7 @@ const Validation3 = (): JSX.Element => {
 
   return (
     <>
-      <body className="body">
+      <div className="body">
         <div className="section-1">
           <img src={Lady1} className="img-lady" alt="Lady with Phone" />
           <section>
@@ -79,7 +79,7 @@ const Validation3 = (): JSX.Element => {
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <Terms/> {/* Display the Profile component inside the modal */}
         </Modal>
-      </body>
+      </div>
     </>
   );
 };

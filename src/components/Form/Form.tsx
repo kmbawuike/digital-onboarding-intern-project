@@ -64,17 +64,13 @@ const Form = (): JSX.Element => {
     setIsButtonActive(allFieldsFilled);
   }, [firstName, lastName, signature, email, phoneNumber]);
 
-  // Handle frame click to switch sections
-  const handleFrameClick = () => {
-    setActiveSection((prevSection) => (prevSection === "section-1" ? "man-frame" : "section-1"));
-  };
-
+ 
   const HandleBackButton = () =>{
     navigate('/NIN')
   }
   return (
     <>
-      <body className="body">
+      <div className="body">
         <div className={`section-1 ${activeSection === "section-1" ? "active" : "hidden"}`}>
           <img src={Lady1} className="img-lady" alt="Lady with Phone" />
           <section>
@@ -87,30 +83,12 @@ const Form = (): JSX.Element => {
               </p>
             </div>
             <div className="frame-3">
-              <Frame onClick={handleFrameClick} />
+              <Frame  />
             </div>
           </section>
         </div>
 
-        <div className={`man-frame ${activeSection === "man-frame" ? "active" : "hidden"}`}>
-          <div className="overlap">
-            <img className="img-lady" alt="Mask group" src={Man1} />
-            <div className="group">
-              <div className="overlap-group">
-                <p className="everything-is-ea-y">
-                  <span className="text-wrapper">Everything is Ea&nbsp;&nbsp;y with</span>
-                  <span className="span">&nbsp;</span>
-                  <span className="text-wrapper-2">FCMB</span>
-                </p>
-                <img className="fxemoji-bolt-form" alt="Fxemoji bolt" src={Bolt} style={{top:"621px", left:"80px"}} />
-              </div>
-            </div>
-          </div>
-          <div className="div">
-            <Frame onClick={handleFrameClick} />
-          </div>
-        </div>
-
+       
         <div className="section-2">
           <header>
             <span>
@@ -259,7 +237,7 @@ const Form = (): JSX.Element => {
             </div>
           </section>
         </div>
-      </body>
+      </div>
     </>
   );
 };

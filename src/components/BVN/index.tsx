@@ -21,7 +21,7 @@ const BVN: React.FC = () => {
 
   return (
     <>
-      <body className="body">
+      <div className="body">
         <div className="section-1">
           <img src={Lady1} className="img-lady" alt="Lady with Phone" />
           <section>

@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../assets/fxemoji_bolt.png";
-import "../screens/Default/OTP.css";
+// import "../screens/Default/OTP.css";
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 import "./Form.css";
@@ -102,7 +102,7 @@ const Form = (): JSX.Element => {
                   <span className="span">&nbsp;</span>
                   <span className="text-wrapper-2">FCMB</span>
                 </p>
-                <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} />
+                <img className="fxemoji-bolt-form" alt="Fxemoji bolt" src={Bolt} style={{top:"621px", left:"80px"}} />
               </div>
             </div>
           </div>

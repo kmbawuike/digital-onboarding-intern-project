@@ -11,7 +11,6 @@ import NINentry from "../EnterNIN/EnterNIN";
 import Modal from "../Modals/NINModal"; // import the Modal component
 import "../screens/Default/Stargazing.css";
 
-
 const Validation = (): JSX.Element => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -34,15 +33,15 @@ const Validation = (): JSX.Element => {
             </div>
         
             <div className="div" style={{marginLeft:"270px"}}>
-            <Frame />
-          </div>
+              <Frame />
+            </div>
             
           </section>
         </div>
         <div className="section-2">
           <header>
             <span>
-            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+              <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
                 <p>Go back home</p>
               </Link>
               <img
@@ -56,18 +55,27 @@ const Validation = (): JSX.Element => {
           <br />
           <section className="success">
             <div className="frame1">
-              <div className="text-wrapper">Validation Successful</div>
-              <img className="group" alt="Group" src={Stargazing} />
-              <Buttons
-                border="none"
-                color=""
-                height="70px"
-                onClick={openModal} // Open modal on click
-                radius="20px"
-                width="350px"
-                children="Continue"
-                disabled={false}
-              />
+              <div className="first-text-wrapper">Validation Successful</div>
+              <img className="group1" alt="Group" src={Stargazing} />
+              <div 
+                className="Button-wrapper"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",  // Center the button horizontally
+                  marginTop: "20px"
+                }}
+              >
+                <Buttons
+                  border="none"
+                  color=""
+                  height="70px"
+                  onClick={openModal} // Open modal on click
+                  radius="20px"
+                  width="350px"
+                  children="Continue"
+                  disabled={false}
+                />
+              </div>
             </div>
           </section>
         </div>

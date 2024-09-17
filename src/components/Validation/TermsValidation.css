@@ -79,5 +79,17 @@ body {
     height: 311px;
     margin-right: -2px;
     position: relative;
-    width: 100%;
+    left: 58px;
+ 
+}
+.second-text-wrapper{
+    color: #1e2e3f;
+    font-family: "Gotham-Bold", Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+    margin-left: 125px;
 }

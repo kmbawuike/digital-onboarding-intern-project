@@ -26,7 +26,15 @@
     overflow-y: scroll;
     position: relative;
     width: 400px;
+    margin-left: 50px;
    }
+   .fxemoji-bolt-form {
+    height: 44px;
+    left: 99px;
+    position: absolute;
+    top: 635px;
+    width: 40px;
+  }
    .form-frame .ellipse {
     height: 60.5px;
     position: relative;

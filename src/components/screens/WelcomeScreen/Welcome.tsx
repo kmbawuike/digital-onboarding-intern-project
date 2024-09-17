@@ -52,7 +52,7 @@ const Welcome = (): JSX.Element => {
               <div className="Info">
                 <div className="section-heading">
                   <div className="section-title">FCMB Online Account Opening</div>
-                  <div className="section-title-2" style={{marginLeft:"23px"}}>Welcome!!!</div>
+                  <div className="section-title-2">Welcome!!!</div>
                   <p
                     className="description"
                     style={{
@@ -91,7 +91,7 @@ const Welcome = (): JSX.Element => {
                   </p>
                 </div>
                 <div className="frame-6">
-                  <button className="lmao" onClick={handleGetStartedClick}>Get Started</button>
+                  <button className="lmao" onClick={handleGetStartedClick} style={{marginLeft:"161px"}}>Get Started</button>
                 </div>
               </div>
             </div>
@@ -103,3 +103,4 @@ const Welcome = (): JSX.Element => {
 };
 
 export default Welcome;
+  

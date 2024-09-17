@@ -58,8 +58,9 @@ const Validation3 = (): JSX.Element => {
           <br />
           <section>
             <div className="TC-frame">
-              <div className="text-wrapper">Validation Successful</div>
+              <div className="second-text-wrapper">Validation Successful</div>
               <img className="stars" alt="Group" src={Stargazing} />
+              <div className="button-wrapper" style={{marginLeft:"78px"}}>
               <Buttons
                 border="none"
                 color=""
@@ -70,6 +71,7 @@ const Validation3 = (): JSX.Element => {
                 onClick={console.log}
                 disabled={false}
               />
+              </div>
             </div>
           </section>
         </div>

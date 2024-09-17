@@ -26,7 +26,7 @@ const Conditions = (): JSX.Element => {
                 <span className="FCMB">FastCash</span>
               </p>
             </div>
-            <div className="div">
+            <div className="div"  style={{marginLeft:"270px"}}>
               <Frame />
             </div>
           </section>

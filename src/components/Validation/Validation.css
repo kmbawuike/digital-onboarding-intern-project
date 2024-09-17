@@ -62,6 +62,17 @@ body {
     gap: 50px;
     position: relative;
 }
+.first-text-wrapper{
+    color: #1e2e3f;
+    font-family: "Gotham-Bold", Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
 
 .section-2 .text-wrapper {
     color: #1e2e3f;

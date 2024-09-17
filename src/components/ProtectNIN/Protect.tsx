@@ -81,7 +81,7 @@ const Protect = (): JSX.Element => {
             </span>
           </header>
           <br />
-          <section style={{width:"400px", height:"472px"}}>
+          <section style={{width:"400px", height:"472px", marginLeft:"53px"}}>
             <h1>Validate Identity</h1>
             <br />
             <div className="protect-account">

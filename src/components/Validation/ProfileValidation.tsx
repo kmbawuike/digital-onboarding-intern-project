@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../img/fxemoji_bolt.svg";
-import "./Validation.css";
+import "./Valid2.css";
 import { Link, useNavigate } from "react-router-dom";
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
@@ -58,8 +58,8 @@ const Validation2 = (): JSX.Element => {
           <br />
           <section>
             <div className="validation-frame">
-              <div className="text-wrapper">Validation Successful</div>
-              <img className="group" alt="Group" src={Stargazing} />
+              <div className="third-text-wrapper">Validation Successful</div>
+              <img className="profile-group" alt="Group" src={Stargazing} />
               <Buttons
                 border="none"
                 color=""

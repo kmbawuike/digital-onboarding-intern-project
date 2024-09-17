@@ -60,7 +60,7 @@ const LoginScreen = (): JSX.Element => {
           <div className="frame-5">
             <div className="section-heading">
               <div className="section-title">FCMB Online Account Opening</div>
-              <p className="description">
+              <p className="description" style={{marginLeft:"-38px"}}>
                 You can open your FCMB Account from anywhere
                 <br />
                 in the world. It&#39;s easy, convenient and seamless

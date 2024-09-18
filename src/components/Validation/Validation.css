@@ -1,9 +1,13 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 200px;
     background-color: rgb(127, 18, 142);
+    font-family: "Montserrat", sans-serif;
+    
 }
 
 .fxemoji-bolt {

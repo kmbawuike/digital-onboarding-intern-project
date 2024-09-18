@@ -81,7 +81,7 @@ const Protect = (): JSX.Element => {
             </span>
           </header>
           <br />
-          <section style={{width:"400px", height:"472px", marginLeft:"53px"}}>
+          <section style={{width:"400px", height:"472px", marginLeft:"29px"}}>
             <h1>Validate Identity</h1>
             <br />
             <div className="protect-account">
@@ -91,7 +91,7 @@ const Protect = (): JSX.Element => {
               </p>
             </div>
             <br />
-            <div className="input-wrapper">
+            <div className="input-wrapper" style={{marginLeft:"-20px"}}>
               <p className="bvn-text" style={{textAlign:"left"}}>Phone number</p>
               <input
                 type="number"

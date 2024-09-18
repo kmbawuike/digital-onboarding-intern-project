@@ -60,9 +60,10 @@ const Validation2 = (): JSX.Element => {
             <div className="validation-frame">
               <div className="third-text-wrapper">Validation Successful</div>
               <img className="profile-group" alt="Group" src={Stargazing} />
+              <div className="button-wrapper" style={{marginLeft:"78px"}}>
               <Buttons
                 border="none"
-                color=""
+                color="purple"
                 height="70px"
                 radius="20px"
                 width="350px"
@@ -70,6 +71,8 @@ const Validation2 = (): JSX.Element => {
                 onClick={console.log}
                 disabled={false}
               />
+              </div>
+            
             </div>
           </section>
         </div>
@@ -77,7 +80,7 @@ const Validation2 = (): JSX.Element => {
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <Profile /> {/* Display the Profile component inside the modal */}
         </Modal>
-      </body>
+      </div>
     </>
   );
 };

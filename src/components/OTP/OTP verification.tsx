@@ -227,7 +227,7 @@ const OTP: React.FC = () => {
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
           <FaceID />
         </Modal>
-      </body>
+      </div>
     </>
   );
 };

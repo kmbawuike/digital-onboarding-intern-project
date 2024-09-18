@@ -163,7 +163,7 @@ const Conditions = (): JSX.Element => {
         </div>
 
        
-      </body>
+      </div>
     </>
   );
 };

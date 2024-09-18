@@ -103,7 +103,7 @@ const BVN: React.FC = () => {
             </p>
           </section>
         </div>
-      </body>
+      </div>
     </>
   );
 };

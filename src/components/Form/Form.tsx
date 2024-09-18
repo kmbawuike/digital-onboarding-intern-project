@@ -77,7 +77,7 @@ const Form = (): JSX.Element => {
             <div className="overlap-group-2">
               <p className="everything-is-ea-y">
                 <span className="span">Ea</span>{" "}
-                <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} />
+                <img className="fxemoji-bolt-form" alt="Fxemoji bolt" src={Bolt} />
                 <span className="span">y loans with </span>
                 <span className="FCMB">FastCash</span>
               </p>

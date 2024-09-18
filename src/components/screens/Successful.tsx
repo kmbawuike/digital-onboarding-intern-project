@@ -90,7 +90,7 @@ const Done = (): JSX.Element => {
     </div>
           </section>
         </div>
-      </body>
+      </div>
     </>
   );
 };

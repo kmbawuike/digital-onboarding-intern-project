@@ -63,7 +63,7 @@ const Validation3 = (): JSX.Element => {
               <div className="button-wrapper" style={{marginLeft:"78px"}}>
               <Buttons
                 border="none"
-                color=""
+                color="purple"
                 height="70px"
                 radius="20px"
                 width="350px"

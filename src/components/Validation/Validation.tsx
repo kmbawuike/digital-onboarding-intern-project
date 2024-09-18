@@ -65,9 +65,10 @@ const Validation = (): JSX.Element => {
                   marginTop: "20px"
                 }}
               >
+                <div className="button-wrapper">
                 <Buttons
                   border="none"
-                  color=""
+                  color="purple"
                   height="70px"
                   onClick={openModal} // Open modal on click
                   radius="20px"
@@ -75,6 +76,7 @@ const Validation = (): JSX.Element => {
                   children="Continue"
                   disabled={false}
                 />
+                </div>
               </div>
             </div>
           </section>
@@ -83,7 +85,7 @@ const Validation = (): JSX.Element => {
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <NINentry /> {/* Display the NIN entry form inside the modal */}
         </Modal>
-      </body>
+      </div>
     </>
   );
 };

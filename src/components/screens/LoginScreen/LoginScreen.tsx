@@ -78,7 +78,7 @@ const LoginScreen = (): JSX.Element => {
        
           </section>
         </div>
-      </body>
+      </div>
     </>
   );
 };

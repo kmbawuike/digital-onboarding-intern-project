@@ -91,6 +91,7 @@ const NIN = (): JSX.Element => {
               </p>
             </div>
             <br />
+            <div className="entry-wrapper" style={{marginLeft:"-21px"}}>
             <div className="input-wrapper">
               <p className="bvn-text" style={{textAlign:"left"}}>Phone number</p>
               <input
@@ -125,7 +126,9 @@ const NIN = (): JSX.Element => {
                 >
                   Try Facial Recognition
                 </span>
+                
               </p>
+              </div>
             </div>
           </section>
         </div>

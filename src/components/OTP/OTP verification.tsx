@@ -214,7 +214,7 @@ const OTP: React.FC = () => {
                   {isConfirmVisible && (
                     <div className="label-confirm">
                       <div className="login-successful">Confirming your details</div>
-                      <div className="Loader-wrapper">
+                      <div className="Loader-wrapper" style={{marginLeft:"50px"}}>
 
                       <Loader />
                       </div>

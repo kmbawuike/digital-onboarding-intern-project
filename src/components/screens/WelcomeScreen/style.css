@@ -1,4 +1,6 @@
-/* Frame and Section Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .frame-5 {
   align-items: center;
   background-color: transparent;
@@ -30,7 +32,7 @@
 
 .section-title {
   color: #5c068c;
-  font-family: "Gotham-Bold", Helvetica;
+  font-family: "Montserrat", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 64px;
@@ -39,8 +41,8 @@
 }
 
 .section-title-2 {
-  color: var(--text-gray-900);
-  font-family: "Gotham-Bold", Helvetica;
+  
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 64px;
@@ -49,8 +51,8 @@
 }
 
 .description {
-  color: var(--text-gray-900);
-  font-family: "Gotham-Bold", Helvetica;
+
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -60,12 +62,14 @@
 .text-wrapper-4 {
   font-weight: 700;
   margin-left: -70px;
+  color: black;
 }
 
 .text-wrapper-5 {
-  font-family: "Gotham-Regular", Helvetica;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 margin-left: -70px;
+color: black;
 }
 
 /* Button Styles */
@@ -83,7 +87,7 @@ margin-left: -70px;
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
-  font-family: "Circular Std-Medium", Helvetica;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 50px;
@@ -98,7 +102,20 @@ margin-left: -70px;
   background: linear-gradient(180deg, #A11E90 0%, #60088C 100%);
 }
 
-/* Additional Styles for Responsiveness */
-@media (max-width: 767px) {
-
+/* General styles for both sections */
+.section-1,
+.section-2 {
+  display: block; /* Ensure both sections are visible by default */
 }
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  .section-1 {
+    display: none; /* Hide section-1 on smaller screens */
+  }
+  
+  .section-2 {
+    width: 100%; /* Ensure section-2 takes full width */
+  }
+}
+

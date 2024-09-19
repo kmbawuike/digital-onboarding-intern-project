@@ -52,7 +52,7 @@ const Welcome = (): JSX.Element => {
               <div className="Info">
                 <div className="section-heading">
                   <div className="section-title">FCMB Online Account Opening</div>
-                  <div className="section-title-2">Welcome!!!</div>
+                  <div className="section-title-2" style={{marginLeft:"20px"}}>Welcome!!!</div>
                   <p
                     className="description"
                     style={{

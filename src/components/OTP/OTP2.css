@@ -1,4 +1,24 @@
-body {
+@font-face {
+    font-family: 'Gotham';
+    src: url('../../Gotham-Font/Gotham-Light.otf') format('otf'),
+        
+         url('../../Gotham-Font/GothamLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+ 
+  @font-face {
+    font-family: 'Gotham';
+    src: url('../../Gotham-Font/Gotham-Light.otf') format('otf'),
+        
+         url('../../Gotham-Font/GothamLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+.body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,12 +28,12 @@ body {
 
  .fxemoji-bolt {
     height: 44px;
-    left: 99px;
+    left: 93px;
     position: absolute;
-    top: 635px;
+    top: 629px;
     width: 40px;
   }
-
+ 
 .section-1 {
     img {
        
@@ -43,11 +63,12 @@ body {
   
 
 .section-2 {
-    width: 500px;
+    width: 720px;
     background-color: white;
     padding: 30px;
     border-radius: 19px;
     margin: 20px;
+    margin-left: -12px;
 
     span {
         display: flex;
@@ -127,7 +148,7 @@ body {
 
         .bvn-text {
             margin-left: 30px;
-            color: rgb(127, 18, 142);
+            /* color: rgb(127, 18, 142); */
         }
 
         .continue {

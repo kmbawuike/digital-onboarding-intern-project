@@ -1,5 +1,5 @@
 import React from "react";
-import Defaultage from "./components/screens/OTP verification";
+import Defaultage from "./components/OTP/OTP verification";
 
 const TryEverything: React.FC = () => {
 

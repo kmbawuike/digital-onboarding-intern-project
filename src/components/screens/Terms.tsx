@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Lady1 from "../../img/Lady with Phone 1.png";
 import Bolt from "../../img/fxemoji_bolt.svg";
-import "./Valid2.css";
-import { useNavigate } from "react-router-dom";
+import "../Validation/Valid2.css";
+import { Link, useNavigate } from "react-router-dom";
 import Frame from "../tools/Frame";
 import FCMB from "../../img/image 17.png";
 import Buttons from "../tools/Buttons";
@@ -14,19 +14,19 @@ const Conditions = (): JSX.Element => {
 
   return (
     <>
-      <body className="body">
+      <div className="body">
         <div className="section-1">
           <img src={Lady1} className="img-lady" alt="Lady with Phone" />
           <section>
             <div className="overlap-group-2">
               <p className="everything-is-ea-y">
-                <span className="span">Ea</span>{" "}
+                <span className="span1">Ea</span>{" "}
                 <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} />
-                <span className="span">y loans with </span>
-                <span className="FCMB">FastCash</span>
+                <span className="span1">y loans with </span>
+                <span className="FCMB"  style={{fontWeight:"bolder", fontSize:"larger"}}>FastCash</span>
               </p>
             </div>
-            <div className="div">
+            <div className="div"  style={{marginLeft:"270px"}}>
               <Frame />
             </div>
           </section>
@@ -34,7 +34,9 @@ const Conditions = (): JSX.Element => {
         <div className="section-2">
           <header>
             <span>
-              <p>Go back home </p>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+                <p>Go back home</p>
+              </Link>
               <img
                 src={FCMB}
                 className="logo"
@@ -161,7 +163,7 @@ const Conditions = (): JSX.Element => {
         </div>
 
        
-      </body>
+      </div>
     </>
   );
 };

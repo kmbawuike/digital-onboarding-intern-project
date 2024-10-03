@@ -1,0 +1,261 @@
+.form-frame {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+   }
+   .form-frame .form-text-wrapper {
+    color: #1e2e3f;
+    font-family: "Gotham-Bold", Helvetica;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+   }
+   .form-frame .div {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    position: relative;
+    width: 400px;
+    margin-left: 50px;
+   }
+   .fxemoji-bolt-form {
+    height: 44px;
+    left: 81px;
+    position: absolute;
+    top: 620px;
+    width: 40px;
+  }
+   .form-frame .ellipse {
+    height: 60.5px;
+    position: relative;
+    width: 50.5px;
+   }
+   .form-frame .form-div-2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+   }
+   .form-frame .input-wrapper {
+    align-items: flex-end;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 23px;
+    position: relative;
+   }
+   .form-frame .fom-input {
+    height: 74px;
+    position: relative;
+    width: 372px;
+   }
+  
+   .form-frame .text-wrapper-2 {
+    color:black;
+    font-family: "Gotham-Book", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 16px;
+    white-space: nowrap;
+   }
+   .form-frame .text-wrapper-3 {
+    color: #1e2e3f;
+    font-family: "Gotham-Book", Helvetica;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+   }
+   .form-frame .text-wrapper-4 {
+    color: var(--black-70);
+    font-family: "Herr Von Muellerhoff-Regular", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 16px;
+   }
+   .form-frame .div-wrapper {
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #c4c4c4;
+    border-radius: 10px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 24px;
+    width: 372px;
+   }   
+
+   .form-frame .text-wrapper-5 {
+    color: var(--blackprimary);
+    font-family: "Gotham-Book", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    left: 19px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 16px;
+    white-space: nowrap;
+   }
+   .form-frame .div-3 {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 10px;
+    position: relative;
+   }
+   .form-frame .icons-wrapper {
+    align-items: center;
+    border: 1.5px solid;
+    border-color: transparent;
+    border-image: linear-gradient(to bottom, rgb(96, 8, 140) 23.44%, rgb(162, 49, 147)) 1;
+    border-radius: 40px;
+    display: flex;
+    gap: 10px;
+    height: 70px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 15px 20px;
+    position: relative;
+    width: 70px;
+   }
+   .form-frame .icons-instance {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+   }
+   .form-frame .buttons-instance {
+    border-radius: 50px !important;
+    height: 70px !important;
+    width: 320px !important;
+   }
+   .form-frame .design-component-instance-node {
+    font-family: "Montserrat-Medium", Helvetica !important;
+   }
+
+   .form-frame .form-input {
+    background-color: #f4f4f4;
+    border: 1px solid;
+    border-color: #c4c4c4;
+    border-radius: 10px;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    top: 0px;
+    width: 360px;
+    margin-left: -6px;
+    margin-top: -1px;
+   }
+
+   .frame {
+ height: 1024px;
+ position: relative;
+ width: 717px;
+}
+.frame .overlap {
+ height: 884px;
+ left: 28px;
+ position: absolute;
+ top: 59px;
+ width: 649px;
+}
+.frame .mask-group {
+ height: 765px;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 649px;
+}
+.frame .group {
+ height: 355px;
+ left: 133px;
+ position: absolute;
+ top: 529px;
+ width: 398px;
+}
+.frame .overlap-group {
+ height: 355px;
+ position: relative;
+ width: 396px;
+}
+.frame .everything-is-ea-y {
+ color: #ffffff;
+ font-family: "Montserrat-Regular", Helvetica;
+ font-size: 64px;
+ font-weight: 400;
+ left: 0;
+ letter-spacing: 0;
+ line-height: 64px;
+ position: absolute;
+ text-align: center;
+ top: 0;
+ width: 396px;
+}
+.frame .text-wrapper {
+ line-height: 100px;
+}
+.frame .span {
+ font-family: "Montserrat-SemiBold", Helvetica;
+ font-size: 72px;
+ font-weight: 600;
+ line-height: 100px;
+}
+
+/* Default hidden state */
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  /* Active state, slides into view */
+  .active {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  /* Slide-in from the left for section-1 */
+  .section-1.active {
+    transform: translateX(0);
+  }
+  
+  /* Slide-out to the right for section-1 */
+  .section-1.hidden {
+    transform: translateX(-100%);
+  }
+  
+  /* Slide-in from the right for man-frame */
+  .man-frame.active {
+    transform: translateX(0);
+  }
+  
+  /* Slide-out to the left for man-frame */
+  .man-frame.hidden {
+    transform: translateX(100%);
+  }

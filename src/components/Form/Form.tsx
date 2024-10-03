@@ -76,10 +76,10 @@ const Form = (): JSX.Element => {
           <section>
             <div className="overlap-group-2">
               <p className="everything-is-ea-y">
-                <span className="span">Ea</span>{" "}
+                <span className="span1">Ea</span>{" "}
                 <img className="fxemoji-bolt-form" alt="Fxemoji bolt" src={Bolt} />
-                <span className="span">y loans with </span>
-                <span className="FCMB">FastCash</span>
+                <span className="span1">y loans with </span>
+                <span className="FCMB" style={{fontWeight:"bolder", fontSize:"larger"}}>FastCash</span>
               </p>
             </div>
             <div className="frame-3">
@@ -104,7 +104,7 @@ const Form = (): JSX.Element => {
             </span>
           </header>
           <br />
-          <section>
+          <section  style={{marginLeft:"71px"}}>
             <div className="form-frame">
               <div className="text-wrapper">Profile Details</div>
               <div className="div">

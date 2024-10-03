@@ -19,15 +19,16 @@ const LoginScreen = (): JSX.Element => {
   return (
     <>
       <div className="body">
-        <div className= "section-1">
+        <div className= "section-1" >
           <img src={Lady1} className="img-lady" alt="Lady with Phone" />
           <section>
             <div className="overlap-group-2">
               <p className="everything-is-ea-y">
-                <span className="span" style={{marginRight:"5px"}}>Ea</span>{" "}
+                <span className="span1" style={{marginRight:"5px"}}>Ea</span>{" "}
                 <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} />
-                <span className="span " style={{marginLeft:"5px"}}>y loans with </span>
-                <span className="FCMB">FastCash</span>
+                <span className="span1">y loans with </span>
+               
+                <span className="FCMB" style={{fontWeight:"bolder", fontSize:"larger"}}>FastCash</span>
               </p>
             </div>
             <div className="frame-3">
@@ -53,7 +54,7 @@ const LoginScreen = (): JSX.Element => {
             </span>
           </header>
           <br />
-          <section>
+          <section  style={{marginLeft:"101px"}}>
           
     
 
@@ -84,3 +85,5 @@ const LoginScreen = (): JSX.Element => {
 };
 
 export default LoginScreen;
+
+

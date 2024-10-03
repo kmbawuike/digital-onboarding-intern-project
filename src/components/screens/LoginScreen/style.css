@@ -20,7 +20,7 @@
   border-radius: 50px; /* Rounded corners */
   color: #ffffff;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 50px;
@@ -69,7 +69,7 @@
 .description {
   align-self: stretch;
   color: var(--text-gray-900);
-  font-family: "Gotham-Book", Helvetica;
+  font-family: "Gotham", Helvetica;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0;
@@ -90,4 +90,23 @@
   top: 554px;
   font-weight: 400;
   width: 500px;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../../Gotham-Font/Gotham-Light.otf') format('otf'),
+      
+       url('../../../Gotham-Font/GothamLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../../Gotham-Font/Gotham-Light.otf') format('otf'),
+      
+       url('../../../Gotham-Font/GothamLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }

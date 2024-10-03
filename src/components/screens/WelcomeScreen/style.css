@@ -32,7 +32,7 @@
 
 .section-title {
   color: #5c068c;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 64px;
@@ -42,7 +42,7 @@
 
 .section-title-2 {
   
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 64px;
@@ -52,7 +52,7 @@
 
 .description {
 
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -66,7 +66,7 @@
 }
 
 .text-wrapper-5 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 16px;
 margin-left: -70px;
 color: black;
@@ -87,7 +87,7 @@ color: black;
   border-radius: 50px;
   color: #ffffff;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gotham", sans-serif;
   font-size: 16px;
   font-weight: 600;
   height: 50px;
@@ -119,3 +119,23 @@ color: black;
   }
 }
 
+
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../../Gotham-Font/Gotham-Light.otf') format('otf'),
+      
+       url('../../../Gotham-Font/GothamLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../../../Gotham-Font/Gotham-Light.otf') format('otf'),
+      
+       url('../../../Gotham-Font/GothamLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

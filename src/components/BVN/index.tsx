@@ -27,7 +27,7 @@ const BVN: React.FC = () => {
           <section>
             <div className="overlap-group-2">
               <p className="everything-is-ea-y">
-                <span className="span">Ea</span> <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} /><span className="span">y loans with </span><span className="FCMB">FastCash</span>
+                <span className="span1">Ea</span> <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} /><span className="span1">y loans with </span><span className="FCMB" style={{fontWeight:"bolder", fontSize:"larger"}}>FastCash</span>
               </p>
             </div> 
             <div className="frame-3">
@@ -45,7 +45,7 @@ const BVN: React.FC = () => {
             </span>
           </header>
           <br />
-          <section>
+          <section  style={{marginLeft:"91px"}}>
             <h1>Open a new Account</h1>
             <br />
             <span className="toggle">

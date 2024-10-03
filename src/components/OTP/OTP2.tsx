@@ -84,10 +84,10 @@ const HandleBackButton = () =>{
           <section>
             <div className="overlap-group-2">
               <p className="everything-is-ea-y">
-                <span className="span">Ea</span>{" "}
+                <span className="span1">Ea</span>{" "}
                 <img className="fxemoji-bolt" alt="Fxemoji bolt" src={Bolt} />
-                <span className="span">y loans with </span>
-                <span className="FCMB">FastCash</span>
+                <span className="span1">y loans with </span>
+                <span className="FCMB" style={{fontWeight:"bolder", fontSize:"larger"}}>FastCash</span>
               </p>
             </div>
             <div className="frame-3">
@@ -111,7 +111,7 @@ const HandleBackButton = () =>{
             </span>
           </header>
           <br />
-          <section>
+          <section  style={{marginLeft:"71px"}} >
             <div className="otp-frame">
               <div className="text-wrapper" style={{ marginRight: "0px" }}>
                 Enter your OTP
@@ -121,7 +121,7 @@ const HandleBackButton = () =>{
                   <p className="you-are-about-to-top">
                     <div className="Big">
                       <span className="span">OTP was sent to the phone number</span>
-                      <span className="text-wrapper-2"  style={{ color: "purple", marginLeft: "209px", marginTop:"-16px" }}>0803*****90</span>
+                      <span className="text-wrapper-2"  style={{ color: "purple", marginLeft: "232px", marginTop:"-17px" }}>0803*****90</span>
                     </div>
                     <span className="span">Check and input the details</span>
                   </p>
